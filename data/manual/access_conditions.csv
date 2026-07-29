@@ -1,0 +1,4 @@
+condition_id,source_asset,target_asset,protocol,port,condition_type,evidence_type,confidence,description
+AC1,192.168.100.7,192.168.100.4,tcp,22,credential_reuse,scenario_assumption,Low,Controlled assumption that credentials recovered from the compromised Metasploitable host permit SSH access to the Application Server
+AC2,192.168.100.8,192.168.100.4,tcp,22,credential_reuse,scenario_assumption,Low,Controlled assumption that credentials recovered from the compromised OWASP BWA host permit SSH access to the Application Server
+AC3,192.168.100.4,192.168.100.5,tcp,3306,stored_database_credentials,observed_lab_configuration,High,The PHP application stores and uses attackuser credentials to connect to the MySQL Database Server

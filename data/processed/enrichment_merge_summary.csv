@@ -1,0 +1,7 @@
+metric,value
+original_openvas_findings,136
+findings_with_cve,80
+findings_without_cve,56
+matched_finding_cve_links,154
+unmatched_finding_cve_links,0
+enriched_output_rows,210
