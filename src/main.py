@@ -1,22 +1,18 @@
-from utils.data_loader import load_access_conditions
+from graph_builder.build_graph import (
+    build_attack_graph,
+    get_graph_summary,
+)
 
 
 def main() -> None:
-    access_conditions = load_access_conditions()
+    graph = build_attack_graph()
+    summary = get_graph_summary(graph)
 
-    print(
-        f"Access conditions loaded: "
-        f"{len(access_conditions)}"
-    )
+    print("Attack graph created successfully.")
+    print()
 
-    for condition in access_conditions:
-        print(
-            condition["condition_id"],
-            condition["source_asset"],
-            "->",
-            condition["target_asset"],
-            condition["condition_type"],
-        )
+    for metric, value in summary.items():
+        print(f"{metric}: {value}")
 
 
 if __name__ == "__main__":

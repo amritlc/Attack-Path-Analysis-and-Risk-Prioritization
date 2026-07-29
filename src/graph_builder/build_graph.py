@@ -7,12 +7,12 @@ import networkx as nx
 
 from utils.data_loader import (
     clean,
+    load_access_conditions,
     load_assets,
     load_enriched_vulnerabilities,
     load_network_connections,
     load_services,
 )
-
 
 def safe_float(value: Any) -> float:
     """Convert a value to float, returning 0.0 when invalid."""
@@ -61,6 +61,8 @@ def vulnerability_node_id(
         f"{port}|{safe_identifier}"
     )
 
+def access_condition_node_id(condition_id: str) -> str:
+    return f"ACCESS_CONDITION|{condition_id}"
 
 def build_attack_graph() -> nx.MultiDiGraph:
     """
@@ -82,6 +84,7 @@ def build_attack_graph() -> nx.MultiDiGraph:
     services = load_services()
     vulnerabilities = load_enriched_vulnerabilities()
     connections = load_network_connections()
+    access_conditions = load_access_conditions()
 
     asset_by_ip: dict[str, str] = {}
 
@@ -392,8 +395,99 @@ def build_attack_graph() -> nx.MultiDiGraph:
             ),
         )
 
+    # -------------------------------------------------
+    # Credential and trust-based access conditions
+    # -------------------------------------------------
+
+    skipped_access_conditions = 0
+
+    for condition in access_conditions:
+        condition_id = clean(condition.get("condition_id"))
+        source_ip = clean(condition.get("source_asset"))
+        target_ip = clean(condition.get("target_asset"))
+        protocol = normalize_protocol(condition.get("protocol"))
+        port = safe_int(condition.get("port"))
+
+        source_asset_node = asset_by_ip.get(source_ip)
+        target_asset_node = asset_by_ip.get(target_ip)
+
+        if (
+            not condition_id
+            or not source_asset_node
+            or not target_asset_node
+            or not protocol
+            or port is None
+        ):
+            skipped_access_conditions += 1
+            continue
+
+        target_service_node = service_node_id(
+            target_ip,
+            protocol,
+            port,
+        )
+
+        # The access condition must reference a service
+        # confirmed by the Nmap dataset.
+        if target_service_node not in graph:
+            skipped_access_conditions += 1
+            continue
+
+        condition_node = access_condition_node_id(
+            condition_id
+        )
+
+        graph.add_node(
+            condition_node,
+            node_type="access_condition",
+            label=clean(condition.get("condition_type")),
+            condition_id=condition_id,
+            source_ip=source_ip,
+            target_ip=target_ip,
+            protocol=protocol,
+            port=port,
+            condition_type=clean(
+                condition.get("condition_type")
+            ),
+            evidence_type=clean(
+                condition.get("evidence_type")
+            ),
+            confidence=clean(condition.get("confidence")),
+            description=clean(
+                condition.get("description")
+            ),
+            target_service_node=target_service_node,
+        )
+
+        graph.add_edge(
+            source_asset_node,
+            condition_node,
+            edge_type="requires_access_condition",
+            protocol=protocol,
+            port=port,
+            evidence_type=clean(
+                condition.get("evidence_type")
+            ),
+            confidence=clean(condition.get("confidence")),
+        )
+
+        graph.add_edge(
+            condition_node,
+            target_asset_node,
+            edge_type="grants_access",
+            protocol=protocol,
+            port=port,
+            condition_type=clean(
+                condition.get("condition_type")
+            ),
+        )    
+
     graph.graph["skipped_findings"] = skipped_findings
     graph.graph["skipped_connections"] = skipped_connections
+
+    graph.graph["skipped_access_conditions"] = (
+    skipped_access_conditions
+    )
 
     return graph
 
@@ -420,6 +514,17 @@ def get_graph_summary(
         "asset_nodes": node_types["asset"],
         "service_nodes": node_types["service"],
         "vulnerability_nodes": node_types["vulnerability"],
+        "access_condition_nodes": node_types[
+        "access_condition"
+        ],
+        "access_condition_requirement_edges": edge_types[
+        "requires_access_condition"
+        ],
+        "access_grant_edges": edge_types["grants_access"],
+        "skipped_access_conditions": graph.graph.get(
+            "skipped_access_conditions",
+            0,
+        ),
         "reachability_edges": edge_types["can_reach"],
         "vulnerability_edges": edge_types[
             "has_vulnerability"
