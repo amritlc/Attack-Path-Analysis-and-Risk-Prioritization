@@ -14,6 +14,7 @@ from utils.data_loader import (
     load_services,
 )
 
+
 def safe_float(value: Any) -> float:
     """Convert a value to float, returning 0.0 when invalid."""
 
@@ -56,13 +57,12 @@ def vulnerability_node_id(
 ) -> str:
     safe_identifier = identifier.replace("|", "_")
 
-    return (
-        f"VULNERABILITY|{ip_address}|{protocol}|"
-        f"{port}|{safe_identifier}"
-    )
+    return f"VULNERABILITY|{ip_address}|{protocol}|" f"{port}|{safe_identifier}"
+
 
 def access_condition_node_id(condition_id: str) -> str:
     return f"ACCESS_CONDITION|{condition_id}"
+
 
 def build_attack_graph() -> nx.MultiDiGraph:
     """
@@ -76,9 +76,7 @@ def build_attack_graph() -> nx.MultiDiGraph:
         -> compromised asset
     """
 
-    graph = nx.MultiDiGraph(
-        name="Automated Multi-Stage Attack Graph"
-    )
+    graph = nx.MultiDiGraph(name="Automated Multi-Stage Attack Graph")
 
     assets = load_assets()
     services = load_services()
@@ -118,17 +116,9 @@ def build_attack_graph() -> nx.MultiDiGraph:
             asset_type=clean(asset.get("asset_type")),
             zone=clean(asset.get("zone")),
             criticality=clean(asset.get("criticality")),
-            criticality_score=safe_float(
-                asset.get("criticality_score")
-            ),
-            is_entry_point=(
-                clean(asset.get("is_entry_point")).lower()
-                == "yes"
-            ),
-            is_primary_target=(
-                clean(asset.get("is_primary_target")).lower()
-                == "yes"
-            ),
+            criticality_score=safe_float(asset.get("criticality_score")),
+            is_entry_point=(clean(asset.get("is_entry_point")).lower() == "yes"),
+            is_primary_target=(clean(asset.get("is_primary_target")).lower() == "yes"),
         )
 
     # -------------------------------------------------
@@ -208,12 +198,7 @@ def build_attack_graph() -> nx.MultiDiGraph:
         result_id = clean(finding.get("result_id"))
         nvt_name = clean(finding.get("nvt_name"))
 
-        identifier = (
-            cve_id
-            or nvt_oid
-            or result_id
-            or nvt_name
-        )
+        identifier = cve_id or nvt_oid or result_id or nvt_name
 
         if not identifier:
             skipped_findings += 1
@@ -318,18 +303,14 @@ def build_attack_graph() -> nx.MultiDiGraph:
             port=port,
             cve_id=group["cve_id"],
             nvt_oid=group["nvt_oid"],
-            nvt_names=";".join(
-                sorted(group["nvt_names"])
-            ),
+            nvt_names=";".join(sorted(group["nvt_names"])),
             openvas_cvss=group["openvas_cvss"],
             nvd_cvss=group["nvd_cvss"],
             epss=group["epss"],
             epss_percentile=group["epss_percentile"],
             kev=group["kev"],
             severity=group["severity"],
-            nvd_cwes=";".join(
-                sorted(group["nvd_cwes"])
-            ),
+            nvd_cwes=";".join(sorted(group["nvd_cwes"])),
         )
 
         graph.add_edge(
@@ -353,9 +334,7 @@ def build_attack_graph() -> nx.MultiDiGraph:
     for connection in connections:
         source = clean(connection.get("source"))
         target_ip = clean(connection.get("target"))
-        protocol = normalize_protocol(
-            connection.get("protocol")
-        )
+        protocol = normalize_protocol(connection.get("protocol"))
         port = safe_int(connection.get("port"))
 
         if not source or not target_ip or port is None:
@@ -387,12 +366,8 @@ def build_attack_graph() -> nx.MultiDiGraph:
             edge_type="can_reach",
             protocol=protocol,
             port=port,
-            connection_type=clean(
-                connection.get("connection_type")
-            ),
-            justification=clean(
-                connection.get("justification")
-            ),
+            connection_type=clean(connection.get("connection_type")),
+            justification=clean(connection.get("justification")),
         )
 
     # -------------------------------------------------
@@ -433,9 +408,7 @@ def build_attack_graph() -> nx.MultiDiGraph:
             skipped_access_conditions += 1
             continue
 
-        condition_node = access_condition_node_id(
-            condition_id
-        )
+        condition_node = access_condition_node_id(condition_id)
 
         graph.add_node(
             condition_node,
@@ -446,16 +419,10 @@ def build_attack_graph() -> nx.MultiDiGraph:
             target_ip=target_ip,
             protocol=protocol,
             port=port,
-            condition_type=clean(
-                condition.get("condition_type")
-            ),
-            evidence_type=clean(
-                condition.get("evidence_type")
-            ),
+            condition_type=clean(condition.get("condition_type")),
+            evidence_type=clean(condition.get("evidence_type")),
             confidence=clean(condition.get("confidence")),
-            description=clean(
-                condition.get("description")
-            ),
+            description=clean(condition.get("description")),
             target_service_node=target_service_node,
         )
 
@@ -465,9 +432,7 @@ def build_attack_graph() -> nx.MultiDiGraph:
             edge_type="requires_access_condition",
             protocol=protocol,
             port=port,
-            evidence_type=clean(
-                condition.get("evidence_type")
-            ),
+            evidence_type=clean(condition.get("evidence_type")),
             confidence=clean(condition.get("confidence")),
         )
 
@@ -477,17 +442,13 @@ def build_attack_graph() -> nx.MultiDiGraph:
             edge_type="grants_access",
             protocol=protocol,
             port=port,
-            condition_type=clean(
-                condition.get("condition_type")
-            ),
-        )    
+            condition_type=clean(condition.get("condition_type")),
+        )
 
     graph.graph["skipped_findings"] = skipped_findings
     graph.graph["skipped_connections"] = skipped_connections
 
-    graph.graph["skipped_access_conditions"] = (
-    skipped_access_conditions
-    )
+    graph.graph["skipped_access_conditions"] = skipped_access_conditions
 
     return graph
 
@@ -514,21 +475,15 @@ def get_graph_summary(
         "asset_nodes": node_types["asset"],
         "service_nodes": node_types["service"],
         "vulnerability_nodes": node_types["vulnerability"],
-        "access_condition_nodes": node_types[
-        "access_condition"
-        ],
-        "access_condition_requirement_edges": edge_types[
-        "requires_access_condition"
-        ],
+        "access_condition_nodes": node_types["access_condition"],
+        "access_condition_requirement_edges": edge_types["requires_access_condition"],
         "access_grant_edges": edge_types["grants_access"],
         "skipped_access_conditions": graph.graph.get(
             "skipped_access_conditions",
             0,
         ),
         "reachability_edges": edge_types["can_reach"],
-        "vulnerability_edges": edge_types[
-            "has_vulnerability"
-        ],
+        "vulnerability_edges": edge_types["has_vulnerability"],
         "compromise_edges": edge_types["compromises"],
         "skipped_findings": graph.graph.get(
             "skipped_findings",
