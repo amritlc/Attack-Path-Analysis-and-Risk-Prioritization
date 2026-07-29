@@ -1,0 +1,78 @@
+cve_id,finding_count,host_count,hosts,ports,protocols,max_openvas_cvss,severities,nvt_names
+CVE-1999-0678,1,1,192.168.100.7,80,tcp,5.0,Medium,/doc directory browsable
+CVE-2003-1418,2,1,192.168.100.8,443;80,tcp,4.3,Medium,Apache Web Server ETag Header Information Disclosure Weakness
+CVE-2003-1567,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2004-2320,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2004-2687,1,1,192.168.100.7,3632,tcp,9.3,High,DistCC Remote Code Execution Vulnerability
+CVE-2004-2763,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2005-3398,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2006-2247,1,1,192.168.100.8,80,tcp,5.0,Medium,WebCalendar User Account Enumeration Disclosure Issue
+CVE-2006-4683,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2007-3008,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2008-5304,1,1,192.168.100.7,80,tcp,10.0,High,TWiki XSS and Command Execution Vulnerabilities
+CVE-2008-5305,1,1,192.168.100.7,80,tcp,10.0,High,TWiki XSS and Command Execution Vulnerabilities
+CVE-2008-5318,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.0,Medium,Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability
+CVE-2008-5319,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.0,Medium,Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability
+CVE-2008-7253,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2009-0796,2,1,192.168.100.8,443;80,tcp,2.6,Low,Apache mod_perl Apache::Status and Apache2::Status Cross Site Scripting Vulnerability
+CVE-2009-1204,2,1,192.168.100.8,443;80,tcp,4.3,Medium,Tiki Wiki CMS Groupware Multiple Cross Site Scripting Vulnerabilities
+CVE-2009-1339,1,1,192.168.100.7,80,tcp,6.0,Medium,TWiki Cross-Site Request Forgery Vulnerability
+CVE-2009-2823,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2009-4898,1,1,192.168.100.7,80,tcp,6.8,Medium,TWiki Cross-Site Request Forgery Vulnerability - Sep10
+CVE-2010-0386,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2010-0636,1,1,192.168.100.8,80,tcp,6.8,Medium,WebCalendar Multiple CSS and CSRF Vulnerabilities
+CVE-2010-0637,1,1,192.168.100.8,80,tcp,6.8,Medium,WebCalendar Multiple CSS and CSRF Vulnerabilities
+CVE-2010-0638,1,1,192.168.100.8,80,tcp,6.8,Medium,WebCalendar Multiple CSS and CSRF Vulnerabilities
+CVE-2010-1133,3,2,192.168.100.7;192.168.100.8,443;80,tcp,7.5,High,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities
+CVE-2010-1134,3,2,192.168.100.7;192.168.100.8,443;80,tcp,7.5,High,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities
+CVE-2010-1135,3,2,192.168.100.7;192.168.100.8,443;80,tcp,7.5,High,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities
+CVE-2010-1136,3,2,192.168.100.7;192.168.100.8,443;80,tcp,7.5,High,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities
+CVE-2010-3712,2,1,192.168.100.8,443;80,tcp,4.3,Medium,Joomla! Multiple Cross-site Scripting Vulnerabilities
+CVE-2010-4480,3,2,192.168.100.7;192.168.100.8,443;80,tcp,4.3,Medium,phpMyAdmin error.php Cross Site Scripting Vulnerability
+CVE-2011-0411,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-1430,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-1431,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-1432,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-1506,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-1575,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-1926,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-2165,1,1,192.168.100.7,25,tcp,6.8,Medium,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability
+CVE-2011-3192,2,1,192.168.100.8,443;80,tcp,7.8,High,Apache httpd Web Server Range Header Denial of Service Vulnerability
+CVE-2012-0053,3,2,192.168.100.7;192.168.100.8,443;80,tcp,4.3,Medium,Apache HTTP Server httpOnly Cookie Information Disclosure Vulnerability
+CVE-2012-1823,1,1,192.168.100.7,80,tcp,7.5,High,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.
+CVE-2012-2223,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2012-2311,1,1,192.168.100.7,80,tcp,7.5,High,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.
+CVE-2012-2335,1,1,192.168.100.7,80,tcp,7.5,High,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.
+CVE-2012-2336,1,1,192.168.100.7,80,tcp,7.5,High,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.
+CVE-2012-4929,1,1,192.168.100.8,443,tcp,2.6,Low,SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)
+CVE-2012-4930,1,1,192.168.100.8,443,tcp,2.6,Low,SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)
+CVE-2012-6708,1,1,192.168.100.8,8081,tcp,4.3,Medium,jQuery < 1.9.0 XSS Vulnerability
+CVE-2013-2566,2,2,192.168.100.7;192.168.100.8,443;5432,tcp,4.3,Medium,SSL/TLS: Report Weak Cipher Suites
+CVE-2014-0224,2,2,192.168.100.7;192.168.100.8,443;5432,tcp,6.8,Medium,SSL/TLS: OpenSSL CCS Man in the Middle Security Bypass Vulnerability
+CVE-2014-3566,6,2,192.168.100.7;192.168.100.8,25;443;5432,tcp,4.3,Medium,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection;SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)
+CVE-2014-7883,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.8,Medium,HTTP Debugging Methods (TRACE/TRACK) Enabled
+CVE-2014-8363,2,1,192.168.100.8,443;80,tcp,7.5,High,WordPress Spreadsheet plugin Multiple Vulnerabilities
+CVE-2014-8364,2,1,192.168.100.8,443;80,tcp,7.5,High,WordPress Spreadsheet plugin Multiple Vulnerabilities
+CVE-2015-0204,1,1,192.168.100.7,25,tcp,4.3,Medium,SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK)
+CVE-2015-2808,2,2,192.168.100.7;192.168.100.8,443;5432,tcp,4.3,Medium,SSL/TLS: Report Weak Cipher Suites
+CVE-2015-4000,3,2,192.168.100.7;192.168.100.8,25;443;5432,tcp,4.3,Medium,SSL/TLS: DHE_EXPORT Man in the Middle Security Bypass Vulnerability (LogJam);SSL/TLS: Report Weak Cipher Suites
+CVE-2016-0800,3,2,192.168.100.7;192.168.100.8,25;443;5432,tcp,4.3,Medium,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection
+CVE-2016-10143,3,2,192.168.100.7;192.168.100.8,443;80,tcp,5.0,Medium,Tiki Wiki CMS Groupware fixedURLData Local File Inclusion Vulnerability
+CVE-2016-1776,2,1,192.168.100.8,443;80,tcp,5.0,Medium,MacOS X Finder .DS_Store Information Disclosure
+CVE-2016-2183,1,1,192.168.100.8,443,tcp,5.0,Medium,SSL/TLS: Report Vulnerable Cipher Suites for HTTPS
+CVE-2016-6329,1,1,192.168.100.8,443,tcp,5.0,Medium,SSL/TLS: Report Vulnerable Cipher Suites for HTTPS
+CVE-2016-7144,1,1,192.168.100.7,6667,tcp,6.8,Medium,UnrealIRCd Authentication Spoofing Vulnerability
+CVE-2017-11612,2,1,192.168.100.8,443;80,tcp,4.3,Medium,Joomla! Core Cross-Site Scripting Vulnerability - July17
+CVE-2017-14596,4,1,192.168.100.8,443;80,tcp,5.0,Medium,Joomla! < 3.8.0 LDAP Information Disclosure Vulnerability;Joomla! Core LDAP Information Disclosure Vulnerability Nov17
+CVE-2017-7983,2,1,192.168.100.8,443;80,tcp,5.0,Medium,Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities
+CVE-2017-7985,2,1,192.168.100.8,443;80,tcp,5.0,Medium,Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities
+CVE-2017-7986,2,1,192.168.100.8,443;80,tcp,5.0,Medium,Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities
+CVE-2018-15880,2,1,192.168.100.8,443;80,tcp,7.5,High,Joomla! < 3.8.12 Multiple Vulnerabilities
+CVE-2018-15882,2,1,192.168.100.8,443;80,tcp,7.5,High,Joomla! < 3.8.12 Multiple Vulnerabilities
+CVE-2018-17855,2,1,192.168.100.8,443;80,tcp,6.5,Medium,Joomla! < 3.8.13 ACL Violation Vulnerability
+CVE-2018-20212,1,1,192.168.100.7,80,tcp,4.3,Medium,TWiki < 6.1.0 XSS Vulnerability
+CVE-2018-20719,3,2,192.168.100.7;192.168.100.8,443;80,tcp,6.5,Medium,Tiki Wiki CMS Groupware < 17.2 SQL Injection Vulnerability
+CVE-2018-6378,2,1,192.168.100.8,443;80,tcp,4.3,Medium,Joomla! Core Media Manager XSS Vulnerability (20180509)
+CVE-2018-6379,2,1,192.168.100.8,443;80,tcp,4.3,Medium,Joomla! Uri class XSS Vulnerability
+CVE-2018-6470,2,1,192.168.100.8,443;80,tcp,5.0,Medium,MacOS X Finder .DS_Store Information Disclosure
+CVE-2018-7188,3,2,192.168.100.7;192.168.100.8,443;80,tcp,3.5,Low,Tiki Wiki CMS Groupware XSS Vulnerability
