@@ -8,7 +8,7 @@ import networkx as nx
 def get_primary_targets(
     graph: nx.MultiDiGraph,
 ) -> list[str]:
-    """Return assets marked as primary targets."""
+    """Return asset nodes marked as primary targets."""
 
     return [
         node_id
@@ -20,49 +20,91 @@ def get_primary_targets(
     ]
 
 
+def edge_has_type(
+    graph: nx.MultiDiGraph,
+    source: str,
+    target: str,
+    expected_edge_type: str,
+) -> bool:
+    """Check whether two nodes have the expected edge type."""
+
+    edge_data = graph.get_edge_data(source, target, default={})
+
+    return any(
+        attributes.get("edge_type") == expected_edge_type
+        for attributes in edge_data.values()
+    )
+
+
 def is_valid_attack_path(
     graph: nx.MultiDiGraph,
     path: list[str],
 ) -> bool:
     """
-    Validate the expected attack-path structure:
+    Validate exploit-based and access-condition-based transitions.
 
-    Attacker
-      -> Service
-      -> Vulnerability
-      -> Asset
-      -> Service
-      -> Vulnerability
-      -> Asset
+    Supported transitions:
+
+    attacker -> service
+    asset -> service
+    service -> vulnerability
+    vulnerability -> asset
+    asset -> access condition
+    access condition -> asset
     """
 
     if len(path) < 4:
         return False
 
-    node_types = [
-        graph.nodes[node].get("node_type", "")
-        for node in path
-    ]
+    first_type = graph.nodes[path[0]].get("node_type")
+    last_type = graph.nodes[path[-1]].get("node_type")
 
-    if node_types[0] != "attacker":
+    if first_type != "attacker":
         return False
 
-    if node_types[-1] != "asset":
+    if last_type != "asset":
         return False
 
-    expected_cycle = {
-        1: "service",
-        2: "vulnerability",
-        0: "asset",
+    allowed_transitions = {
+        ("attacker", "service"): "can_reach",
+        ("asset", "service"): "can_reach",
+        ("service", "vulnerability"): "has_vulnerability",
+        ("vulnerability", "asset"): "compromises",
+        (
+            "asset",
+            "access_condition",
+        ): "requires_access_condition",
+        (
+            "access_condition",
+            "asset",
+        ): "grants_access",
     }
 
-    for index in range(1, len(node_types)):
-        expected_type = expected_cycle[index % 3]
+    vulnerability_found = False
 
-        if node_types[index] != expected_type:
+    for source, target in zip(path, path[1:]):
+        source_type = graph.nodes[source].get("node_type", "")
+        target_type = graph.nodes[target].get("node_type", "")
+
+        transition = (source_type, target_type)
+
+        expected_edge_type = allowed_transitions.get(transition)
+
+        if expected_edge_type is None:
             return False
 
-    return True
+        if not edge_has_type(
+            graph,
+            source,
+            target,
+            expected_edge_type,
+        ):
+            return False
+
+        if target_type == "vulnerability":
+            vulnerability_found = True
+
+    return vulnerability_found
 
 
 def summarize_path(
@@ -74,19 +116,22 @@ def summarize_path(
 
     labels: list[str] = []
     vulnerabilities: list[str] = []
-    target_assets: list[str] = []
+    access_conditions: list[str] = []
+    compromised_assets: list[str] = []
 
     maximum_cvss = 0.0
     maximum_epss = 0.0
     kev_present = False
 
+    scenario_assumption_count = 0
+    observed_condition_count = 0
+
     for node_id in path:
         attributes = graph.nodes[node_id]
         node_type = attributes.get("node_type", "")
 
-        labels.append(
-            str(attributes.get("label", node_id))
-        )
+        label = str(attributes.get("label", node_id))
+        labels.append(label)
 
         if node_type == "vulnerability":
             identifier = (
@@ -97,13 +142,18 @@ def summarize_path(
 
             vulnerabilities.append(str(identifier))
 
+            openvas_cvss = float(
+                attributes.get("openvas_cvss") or 0.0
+            )
+
+            nvd_cvss = float(
+                attributes.get("nvd_cvss") or 0.0
+            )
+
             maximum_cvss = max(
                 maximum_cvss,
-                float(
-                    attributes.get("nvd_cvss")
-                    or attributes.get("openvas_cvss")
-                    or 0.0
-                ),
+                openvas_cvss,
+                nvd_cvss,
             )
 
             maximum_epss = max(
@@ -114,10 +164,31 @@ def summarize_path(
             if attributes.get("kev") is True:
                 kev_present = True
 
-        if node_type == "asset":
-            target_assets.append(
-                str(attributes.get("label", node_id))
+        elif node_type == "access_condition":
+            condition_type = str(
+                attributes.get("condition_type", label)
             )
+
+            evidence_type = str(
+                attributes.get("evidence_type", "")
+            )
+
+            confidence = str(
+                attributes.get("confidence", "")
+            )
+
+            access_conditions.append(
+                f"{condition_type} "
+                f"[{evidence_type}, {confidence}]"
+            )
+
+            if evidence_type == "scenario_assumption":
+                scenario_assumption_count += 1
+            else:
+                observed_condition_count += 1
+
+        elif node_type == "asset":
+            compromised_assets.append(label)
 
     return {
         "path_id": f"PATH-{path_number:04d}",
@@ -125,11 +196,15 @@ def summarize_path(
         "labels": labels,
         "hop_count": len(path) - 1,
         "exploit_stage_count": len(vulnerabilities),
+        "access_condition_count": len(access_conditions),
         "vulnerabilities": vulnerabilities,
-        "compromised_assets": target_assets,
+        "access_conditions": access_conditions,
+        "compromised_assets": compromised_assets,
         "maximum_cvss": maximum_cvss,
         "maximum_epss": maximum_epss,
         "kev_present": kev_present,
+        "scenario_assumption_count": scenario_assumption_count,
+        "observed_condition_count": observed_condition_count,
         "final_target": labels[-1],
     }
 
@@ -141,10 +216,7 @@ def find_attack_paths(
     cutoff: int = 12,
     maximum_paths: int = 5000,
 ) -> list[dict[str, Any]]:
-    """
-    Find complete simple attack paths from the attacker
-    to the primary target asset.
-    """
+    """Find valid paths from the attacker to primary targets."""
 
     if source not in graph:
         raise ValueError(
@@ -156,12 +228,10 @@ def find_attack_paths(
 
     if not targets:
         raise ValueError(
-            "No primary target asset was found in the graph."
+            "No primary target asset was found."
         )
 
-    # Parallel edges are not needed for simple-path discovery.
     simple_graph = nx.DiGraph()
-
     simple_graph.add_nodes_from(graph.nodes(data=True))
 
     for source_node, target_node in graph.edges():
@@ -194,9 +264,9 @@ def find_attack_paths(
             break
 
     discovered_paths.sort(
-        key=lambda path: (
-            len(path),
-            tuple(path),
+        key=lambda discovered_path: (
+            len(discovered_path),
+            tuple(discovered_path),
         )
     )
 
