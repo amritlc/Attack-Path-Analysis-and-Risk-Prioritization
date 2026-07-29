@@ -1,0 +1,8 @@
+metric,value
+hosts,8
+nmap_services,42
+openvas_vulnerabilities,136
+services_with_vulnerabilities,21
+services_without_vulnerabilities,21
+vulnerabilities_without_nmap_service,7
+integrated_output_rows,157
