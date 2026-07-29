@@ -4,12 +4,18 @@ from graph_builder.build_graph import build_attack_graph
 from risk_prioritization.path_prioritizer import (
     prioritize_attack_paths,
 )
-
+from risk_prioritization.feature_builder import (
+    export_path_feature_dataset,
+)
 
 def main() -> None:
     graph = build_attack_graph()
     paths = find_attack_paths(graph)
     ranked_paths = prioritize_attack_paths(graph, paths)
+    export_path_feature_dataset(
+    graph,
+    ranked_paths,
+    )
     export_ranked_paths(ranked_paths)
 
     print(f"Complete attack paths: {len(paths)}")
