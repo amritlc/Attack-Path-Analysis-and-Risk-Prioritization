@@ -1,0 +1,8 @@
+metric,value
+total_ranked_paths,155
+critical_paths,1
+high_paths,10
+medium_paths,142
+low_paths,2
+paths_with_kev,1
+paths_with_complete_cve_coverage,129

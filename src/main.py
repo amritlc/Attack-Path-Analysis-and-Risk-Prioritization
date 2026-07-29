@@ -1,4 +1,5 @@
 from attack_graph.path_finder import find_attack_paths
+from utils.result_exporter import export_ranked_paths
 from graph_builder.build_graph import build_attack_graph
 from risk_prioritization.path_prioritizer import (
     prioritize_attack_paths,
@@ -9,6 +10,7 @@ def main() -> None:
     graph = build_attack_graph()
     paths = find_attack_paths(graph)
     ranked_paths = prioritize_attack_paths(graph, paths)
+    export_ranked_paths(ranked_paths)
 
     print(f"Complete attack paths: {len(paths)}")
     print()
