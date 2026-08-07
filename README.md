@@ -126,7 +126,7 @@ Attack-Path-Analysis-and-Risk-Prioritization/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Attack-Path-Analysis-and-Risk-Prioritization.git
+git clone https://github.com/amritlc/Attack-Path-Analysis-and-Risk-Prioritization.git
 ```
 
 Navigate into the project

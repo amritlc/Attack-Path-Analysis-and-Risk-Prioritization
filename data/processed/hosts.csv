@@ -1,9 +1,0 @@
-ip_address,hostname,mac_address,vendor,status,os_guess,os_accuracy,source_files
-192.168.100.1,,52:54:00:12:35:00,QEMU virtual NIC,up,,,host_discovery.xml
-192.168.100.2,,52:54:00:12:35:00,QEMU virtual NIC,up,,,host_discovery.xml
-192.168.100.3,,08:00:27:3F:3D:CC,PCS Systemtechnik/Oracle VirtualBox virtual NIC,up,,,host_discovery.xml
-192.168.100.4,,08:00:27:A5:83:56,PCS Systemtechnik/Oracle VirtualBox virtual NIC,up,,,full_tcp_appserver.xml;host_discovery.xml
-192.168.100.5,,08:00:27:79:03:E3,PCS Systemtechnik/Oracle VirtualBox virtual NIC,up,,,full_tcp_database.xml;host_discovery.xml
-192.168.100.6,,,,up,,,host_discovery.xml
-192.168.100.7,,08:00:27:AC:1F:7A,PCS Systemtechnik/Oracle VirtualBox virtual NIC,up,,,full_tcp_metasploitable.xml;host_discovery.xml
-192.168.100.8,,08:00:27:5B:1B:AF,PCS Systemtechnik/Oracle VirtualBox virtual NIC,up,,,full_tcp_owaspbwa.xml;host_discovery.xml

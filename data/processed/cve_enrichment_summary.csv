@@ -1,6 +1,0 @@
-metric,value
-unique_cves,77
-cves_with_epss,77
-cves_in_cisa_kev,1
-cves_found_in_nvd,77
-cves_without_nvd_cvss,0

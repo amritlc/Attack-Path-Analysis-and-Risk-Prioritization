@@ -1,5 +1,0 @@
-asset_id,ip_address,hostname,asset_type,zone,criticality,criticality_score,is_entry_point,is_primary_target
-A1,192.168.100.4,ApplicationServer,application_server,internal,High,4,no,no
-A2,192.168.100.5,DatabaseServer,database_server,restricted,Critical,5,no,yes
-A3,192.168.100.7,Metasploitable,vulnerable_server,dmz,Medium,3,yes,no
-A4,192.168.100.8,OWASPBWA,web_server,dmz,High,4,yes,no
