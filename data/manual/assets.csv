@@ -1,0 +1,6 @@
+ip,asset_name,role,criticality,target
+192.168.100.4,Application Server,application_server,High,False
+192.168.100.5,Database Server,database_server,Critical,True
+192.168.100.6,Kali Attacker,attacker,None,False
+192.168.100.7,Metasploitable,vulnerable_server,Medium,False
+192.168.100.8,OWASP BWA,web_application,High,False
