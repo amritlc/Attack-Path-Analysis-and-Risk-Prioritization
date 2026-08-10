@@ -1,0 +1,16 @@
+{
+  "hosts": 8,
+  "services": 42,
+  "openvas_findings": 136,
+  "findings_with_cve": 80,
+  "findings_without_cve": 56,
+  "cve_links": 154,
+  "unique_cves": 77,
+  "nvd_matches": 77,
+  "epss_matches": 77,
+  "kev_matches": 1,
+  "unmatched_service_findings": 1,
+  "services_without_findings": 21,
+  "master_rows": 210,
+  "exact_duplicate_rows": 0
+}

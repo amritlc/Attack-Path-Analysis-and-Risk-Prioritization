@@ -1,0 +1,2 @@
+result_id,ip,port,protocol,service,product,version,cvss,severity,nvt_name,cves,match_type
+12a054bb-c7ef-40b9-ba89-74f14700e297,192.168.100.7,6200.0,tcp,,,,7.5,High,vsftpd Compromised Source Packages Backdoor Vulnerability,NOCVE,unmatched_service

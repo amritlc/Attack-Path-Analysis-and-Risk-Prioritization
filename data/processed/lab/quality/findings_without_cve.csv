@@ -1,0 +1,57 @@
+result_id,ip,port,protocol,service,product,version,cvss,severity,nvt_name,cves,match_type
+e8198c36-b1d7-486a-a1bc-a53121981fae,192.168.100.4,,,,,,2.6,Low,TCP timestamps,NOCVE,host_level
+539f5ee9-5ef2-446c-93c0-c6b6554b0511,192.168.100.5,,,,,,2.6,Low,TCP timestamps,NOCVE,host_level
+a9f069f7-e163-4ebb-9b97-bd6e04781a48,192.168.100.7,512.0,tcp,exec,netkit-rsh rexecd,,10.0,High,rexec Passwordless / Unencrypted Cleartext Login,NOCVE,service_match
+afcb6e06-308d-4973-831d-3124dd755b2a,192.168.100.7,,,,,,10.0,High,OS End Of Life Detection,NOCVE,host_level
+fe99d4d8-ce46-4a06-8898-76579422aa29,192.168.100.7,8787.0,tcp,drb,Ruby DRb RMI,,10.0,High,Distributed Ruby (dRuby/DRb) Multiple Remote Code Execution Vulnerabilities,NOCVE,service_match
+17ca4f8e-c0ce-40d6-a607-6b4e88d54b72,192.168.100.7,1524.0,tcp,bindshell,Metasploitable root shell,,10.0,High,Possible Backdoor: Ingreslock,NOCVE,service_match
+9f0ba2c1-1b78-42d9-a137-3176a3e73699,192.168.100.7,3306.0,tcp,mysql,MySQL,5.0.51a-3ubuntu5,9.0,High,MySQL / MariaDB weak password,NOCVE,service_match
+fb246ef0-e2c4-46e0-bbfc-bc79e2072ce1,192.168.100.7,5900.0,tcp,vnc,VNC,,9.0,High,VNC Brute Force Login,NOCVE,service_match
+d8f33558-3e05-4f5b-b0fa-e18523974e26,192.168.100.7,5432.0,tcp,postgresql,PostgreSQL DB,8.3.0 - 8.3.7,9.0,High,PostgreSQL weak password,NOCVE,service_match
+4e36d190-277c-45b8-8cfc-44f11c1cb599,192.168.100.7,514.0,tcp,tcpwrapped,,,7.5,High,rsh Unencrypted Cleartext Login,NOCVE,service_match
+6d81c728-75b6-4c97-b1a9-94ea6347ccdf,192.168.100.7,80.0,tcp,http,Apache httpd,2.2.8,7.5,High,phpinfo() output Reporting,NOCVE,service_match
+100eb630-3410-4fbd-8eef-eed3e38fe6b2,192.168.100.7,513.0,tcp,login,,,7.5,High,rlogin Passwordless / Unencrypted Cleartext Login,NOCVE,service_match
+b546632b-8866-469d-bb96-720343a9eab5,192.168.100.7,80.0,tcp,http,Apache httpd,2.2.8,7.5,High,Test HTTP dangerous methods,NOCVE,service_match
+12a054bb-c7ef-40b9-ba89-74f14700e297,192.168.100.7,6200.0,tcp,,,,7.5,High,vsftpd Compromised Source Packages Backdoor Vulnerability,NOCVE,unmatched_service
+ce2b8e86-3ced-462b-b89e-d59375565eaf,192.168.100.7,21.0,tcp,ftp,vsftpd,2.3.4,7.5,High,vsftpd Compromised Source Packages Backdoor Vulnerability,NOCVE,service_match
+48a6f23f-a677-46fc-9606-963282adbeea,192.168.100.7,22.0,tcp,ssh,OpenSSH,4.7p1 Debian 8ubuntu1,7.5,High,SSH Brute Force Logins With Default Credentials Reporting,NOCVE,service_match
+6d6d6aa5-f574-4cb1-bd3e-66253bf76fd8,192.168.100.7,21.0,tcp,ftp,vsftpd,2.3.4,6.4,Medium,Anonymous FTP Login Reporting,NOCVE,service_match
+265082aa-8856-41ed-86f0-e346938b252c,192.168.100.7,25.0,tcp,smtp,Postfix smtpd,,5.0,Medium,SSL/TLS: Certificate Expired,NOCVE,service_match
+eb40c19b-701c-4832-91e1-1e224c690cd9,192.168.100.7,5432.0,tcp,postgresql,PostgreSQL DB,8.3.0 - 8.3.7,5.0,Medium,SSL/TLS: Certificate Expired,NOCVE,service_match
+1986cf87-3518-4da3-b2f7-9bd475c78e05,192.168.100.7,25.0,tcp,smtp,Postfix smtpd,,5.0,Medium,Check if Mailserver answer to VRFY and EXPN requests,NOCVE,service_match
+8aba0e81-b229-461c-8187-1ef340bfb8ec,192.168.100.7,80.0,tcp,http,Apache httpd,2.2.8,5.0,Medium,awiki Multiple Local File Include Vulnerabilities,NOCVE,service_match
+e3386a5f-2dd1-4cdd-a9fb-56e9f89a49c3,192.168.100.7,5900.0,tcp,vnc,VNC,,4.8,Medium,VNC Server Unencrypted Data Transmission,NOCVE,service_match
+df19ee47-23bf-4fc6-b726-a76bc76ec05e,192.168.100.7,2121.0,tcp,ftp,ProFTPD,1.3.1,4.8,Medium,FTP Unencrypted Cleartext Login,NOCVE,service_match
+87825a56-4bd5-4713-9bed-5143f3979ff3,192.168.100.7,21.0,tcp,ftp,vsftpd,2.3.4,4.8,Medium,FTP Unencrypted Cleartext Login,NOCVE,service_match
+4316c86c-d6ab-4e1d-a9d1-2b058515dc95,192.168.100.7,23.0,tcp,telnet,Linux telnetd,,4.8,Medium,Telnet Unencrypted Cleartext Login,NOCVE,service_match
+b6fdcd8e-9826-4be5-8848-9e922358b0f0,192.168.100.7,80.0,tcp,http,Apache httpd,2.2.8,4.8,Medium,Cleartext Transmission of Sensitive Information via HTTP,NOCVE,service_match
+788c6c77-1a5f-4774-ad33-391f56edc179,192.168.100.7,22.0,tcp,ssh,OpenSSH,4.7p1 Debian 8ubuntu1,4.3,Medium,SSH Weak Encryption Algorithms Supported,NOCVE,service_match
+4ab34edf-a7d5-4911-a307-a22d29d9bf4f,192.168.100.7,5432.0,tcp,postgresql,PostgreSQL DB,8.3.0 - 8.3.7,4.0,Medium,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,NOCVE,service_match
+4b22b90b-4d47-45b8-a960-79c0e3e7c209,192.168.100.7,25.0,tcp,smtp,Postfix smtpd,,4.0,Medium,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,NOCVE,service_match
+0914e61c-ef65-491f-a50d-14b3233277af,192.168.100.7,5432.0,tcp,postgresql,PostgreSQL DB,8.3.0 - 8.3.7,4.0,Medium,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,NOCVE,service_match
+f09127a0-03b3-4ad4-b30e-cb888438677e,192.168.100.7,25.0,tcp,smtp,Postfix smtpd,,4.0,Medium,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,NOCVE,service_match
+e6304b3c-ea10-47a9-adee-1ce6f4cfb6d8,192.168.100.7,,,,,,2.6,Low,TCP timestamps,NOCVE,host_level
+6b78e7e5-4b49-499d-a211-53106bbb6e81,192.168.100.7,22.0,tcp,ssh,OpenSSH,4.7p1 Debian 8ubuntu1,2.6,Low,SSH Weak MAC Algorithms Supported,NOCVE,service_match
+78c2ae45-ca94-46a1-9f79-be2fa2b050bb,192.168.100.8,,,,,,10.0,High,OS End Of Life Detection,NOCVE,host_level
+7b588036-d6dd-44e4-9102-73c0bc5d9742,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,7.5,High,Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities,NOCVE,service_match
+c260e351-dae8-4456-b4e4-c7bc3e7ac66e,192.168.100.8,80.0,tcp,http,Apache httpd,2.2.14,7.5,High,Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities,NOCVE,service_match
+e895d757-cb4a-484a-92f1-91c6c7b0f215,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,7.5,High,phpinfo() output Reporting,NOCVE,service_match
+52f4dff6-b3b6-43b4-a376-a6a299d3797d,192.168.100.8,80.0,tcp,http,Apache httpd,2.2.14,7.5,High,phpinfo() output Reporting,NOCVE,service_match
+5467068c-d616-4a4c-aba7-047ccb657d1e,192.168.100.8,8080.0,tcp,http,Apache Tomcat/Coyote JSP engine,1.1,7.5,High,Apache Tomcat Manager Remote Unauthorized Access Vulnerability,NOCVE,service_match
+63268a34-433a-4469-9a3a-78aed1609dae,192.168.100.8,8080.0,tcp,http,Apache Tomcat/Coyote JSP engine,1.1,6.8,Medium,Apache Tomcat servlet/JSP container default files,NOCVE,service_match
+98fcad6b-1eca-442a-922e-937211b0da11,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,5.0,Medium,Source Control Management (SCM) Files Accessible,NOCVE,service_match
+39d4b859-0873-4cf4-9e21-0a53b79901bd,192.168.100.8,80.0,tcp,http,Apache httpd,2.2.14,5.0,Medium,Source Control Management (SCM) Files Accessible,NOCVE,service_match
+df781c15-223b-4617-a039-28a0b77b315c,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,5.0,Medium,SSL/TLS: Certificate Expired,NOCVE,service_match
+b41e8702-3c76-4f26-b9f5-da2d87e22191,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,5.0,Medium,Sensitive File Disclosure (HTTP),NOCVE,service_match
+1b4875cc-bee0-4661-b7bd-a267fa5ec991,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,5.0,Medium,awiki Multiple Local File Include Vulnerabilities,NOCVE,service_match
+521adaef-7c7c-4f55-b1b2-9f065f4d12bb,192.168.100.8,80.0,tcp,http,Apache httpd,2.2.14,5.0,Medium,awiki Multiple Local File Include Vulnerabilities,NOCVE,service_match
+76271cf1-58a7-4850-be16-1b74b0cddbc1,192.168.100.8,8080.0,tcp,http,Apache Tomcat/Coyote JSP engine,1.1,4.8,Medium,Cleartext Transmission of Sensitive Information via HTTP,NOCVE,service_match
+eab80bde-56fa-45b7-b810-c51b67f3b151,192.168.100.8,80.0,tcp,http,Apache httpd,2.2.14,4.8,Medium,Cleartext Transmission of Sensitive Information via HTTP,NOCVE,service_match
+b78bc3fc-6531-4577-b162-d5267b796f45,192.168.100.8,22.0,tcp,ssh,OpenSSH,5.3p1 Debian 3ubuntu4,4.3,Medium,SSH Weak Encryption Algorithms Supported,NOCVE,service_match
+3e0962d7-a130-430f-a459-db07c3588dff,192.168.100.8,80.0,tcp,http,Apache httpd,2.2.14,4.3,Medium,WebCalendar Multiple Cross Site Scripting Vulnerabilities,NOCVE,service_match
+f3e47bcd-8097-4779-bae0-ffdbf316ba73,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,4.3,Medium,OrangeHRM jobVacancy.php Cross Site Scripting Vulnerability,NOCVE,service_match
+c7c6ffa6-15d7-4ebe-9414-f1bf7e81bdb0,192.168.100.8,80.0,tcp,http,Apache httpd,2.2.14,4.3,Medium,OrangeHRM jobVacancy.php Cross Site Scripting Vulnerability,NOCVE,service_match
+7dfca94b-fc82-4bbf-8bab-43c5bddc308e,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,4.0,Medium,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,NOCVE,service_match
+035381ad-669d-446a-9c20-c5fb67fd77bb,192.168.100.8,443.0,tcp,http,Apache httpd,2.2.14,4.0,Medium,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,NOCVE,service_match
+bd986705-d114-4491-b4d7-652319b826e9,192.168.100.8,,,,,,2.6,Low,TCP timestamps,NOCVE,host_level
+ad7a1731-2d85-403c-afe8-b59c96b166e4,192.168.100.8,22.0,tcp,ssh,OpenSSH,5.3p1 Debian 3ubuntu4,2.6,Low,SSH Weak MAC Algorithms Supported,NOCVE,service_match
