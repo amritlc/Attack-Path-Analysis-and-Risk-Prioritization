@@ -1,0 +1,202 @@
+node,type,ip,name,role,criticality,target,port,protocol,service,product,cve,nvt,cvss,epss,kev
+asset:192.168.100.4,asset,192.168.100.4,Application Server,application_server,High,False,,,,,,,,,
+asset:192.168.100.5,asset,192.168.100.5,Database Server,database_server,Critical,True,,,,,,,,,
+asset:192.168.100.6,asset,192.168.100.6,Kali Attacker,attacker,,False,,,,,,,,,
+asset:192.168.100.7,asset,192.168.100.7,Metasploitable,vulnerable_server,Medium,False,,,,,,,,,
+asset:192.168.100.8,asset,192.168.100.8,OWASP BWA,web_application,High,False,,,,,,,,,
+service:192.168.100.4:22:tcp,service,192.168.100.4,,,,,22.0,tcp,ssh,OpenSSH,,,,,
+service:192.168.100.4:80:tcp,service,192.168.100.4,,,,,80.0,tcp,http,Apache httpd,,,,,
+service:192.168.100.5:22:tcp,service,192.168.100.5,,,,,22.0,tcp,ssh,OpenSSH,,,,,
+service:192.168.100.5:3306:tcp,service,192.168.100.5,,,,,3306.0,tcp,mysql,MySQL,,,,,
+service:192.168.100.7:21:tcp,service,192.168.100.7,,,,,21.0,tcp,ftp,vsftpd,,,,,
+service:192.168.100.7:22:tcp,service,192.168.100.7,,,,,22.0,tcp,ssh,OpenSSH,,,,,
+service:192.168.100.7:23:tcp,service,192.168.100.7,,,,,23.0,tcp,telnet,Linux telnetd,,,,,
+service:192.168.100.7:25:tcp,service,192.168.100.7,,,,,25.0,tcp,smtp,Postfix smtpd,,,,,
+service:192.168.100.7:53:tcp,service,192.168.100.7,,,,,53.0,tcp,domain,ISC BIND,,,,,
+service:192.168.100.7:80:tcp,service,192.168.100.7,,,,,80.0,tcp,http,Apache httpd,,,,,
+service:192.168.100.7:111:tcp,service,192.168.100.7,,,,,111.0,tcp,rpcbind,,,,,,
+service:192.168.100.7:139:tcp,service,192.168.100.7,,,,,139.0,tcp,netbios-ssn,Samba smbd,,,,,
+service:192.168.100.7:445:tcp,service,192.168.100.7,,,,,445.0,tcp,netbios-ssn,Samba smbd,,,,,
+service:192.168.100.7:512:tcp,service,192.168.100.7,,,,,512.0,tcp,exec,netkit-rsh rexecd,,,,,
+service:192.168.100.7:513:tcp,service,192.168.100.7,,,,,513.0,tcp,login,,,,,,
+service:192.168.100.7:514:tcp,service,192.168.100.7,,,,,514.0,tcp,tcpwrapped,,,,,,
+service:192.168.100.7:1099:tcp,service,192.168.100.7,,,,,1099.0,tcp,java-rmi,GNU Classpath grmiregistry,,,,,
+service:192.168.100.7:1524:tcp,service,192.168.100.7,,,,,1524.0,tcp,bindshell,Metasploitable root shell,,,,,
+service:192.168.100.7:2049:tcp,service,192.168.100.7,,,,,2049.0,tcp,nfs,,,,,,
+service:192.168.100.7:2121:tcp,service,192.168.100.7,,,,,2121.0,tcp,ftp,ProFTPD,,,,,
+service:192.168.100.7:3306:tcp,service,192.168.100.7,,,,,3306.0,tcp,mysql,MySQL,,,,,
+service:192.168.100.7:3632:tcp,service,192.168.100.7,,,,,3632.0,tcp,distccd,distccd,,,,,
+service:192.168.100.7:5432:tcp,service,192.168.100.7,,,,,5432.0,tcp,postgresql,PostgreSQL DB,,,,,
+service:192.168.100.7:5900:tcp,service,192.168.100.7,,,,,5900.0,tcp,vnc,VNC,,,,,
+service:192.168.100.7:6000:tcp,service,192.168.100.7,,,,,6000.0,tcp,X11,,,,,,
+service:192.168.100.7:6667:tcp,service,192.168.100.7,,,,,6667.0,tcp,irc,UnrealIRCd,,,,,
+service:192.168.100.7:6697:tcp,service,192.168.100.7,,,,,6697.0,tcp,irc,UnrealIRCd,,,,,
+service:192.168.100.7:8180:tcp,service,192.168.100.7,,,,,8180.0,tcp,,,,,,,
+service:192.168.100.7:8787:tcp,service,192.168.100.7,,,,,8787.0,tcp,drb,Ruby DRb RMI,,,,,
+service:192.168.100.7:38264:tcp,service,192.168.100.7,,,,,38264.0,tcp,nlockmgr,,,,,,
+service:192.168.100.7:46357:tcp,service,192.168.100.7,,,,,46357.0,tcp,mountd,,,,,,
+service:192.168.100.7:48161:tcp,service,192.168.100.7,,,,,48161.0,tcp,java-rmi,GNU Classpath grmiregistry,,,,,
+service:192.168.100.7:59135:tcp,service,192.168.100.7,,,,,59135.0,tcp,status,,,,,,
+service:192.168.100.8:22:tcp,service,192.168.100.8,,,,,22.0,tcp,ssh,OpenSSH,,,,,
+service:192.168.100.8:80:tcp,service,192.168.100.8,,,,,80.0,tcp,http,Apache httpd,,,,,
+service:192.168.100.8:139:tcp,service,192.168.100.8,,,,,139.0,tcp,netbios-ssn,Samba smbd,,,,,
+service:192.168.100.8:143:tcp,service,192.168.100.8,,,,,143.0,tcp,imap,Courier Imapd,,,,,
+service:192.168.100.8:443:tcp,service,192.168.100.8,,,,,443.0,tcp,http,Apache httpd,,,,,
+service:192.168.100.8:445:tcp,service,192.168.100.8,,,,,445.0,tcp,netbios-ssn,Samba smbd,,,,,
+service:192.168.100.8:5001:tcp,service,192.168.100.8,,,,,5001.0,tcp,java-object,Java Object Serialization,,,,,
+service:192.168.100.8:8080:tcp,service,192.168.100.8,,,,,8080.0,tcp,http,Apache Tomcat/Coyote JSP engine,,,,,
+service:192.168.100.8:8081:tcp,service,192.168.100.8,,,,,8081.0,tcp,http,Jetty,,,,,
+vuln:192.168.100.7:a9f069f7-e163-4ebb-9b97-bd6e04781a48,vulnerability,,,,,,,,,,,rexec Passwordless / Unencrypted Cleartext Login,0.0,0.0,False
+vuln:192.168.100.7:CVE-2008-5304,vulnerability,,,,,,,,,,CVE-2008-5304,TWiki XSS and Command Execution Vulnerabilities,4.3,0.02243,False
+vuln:192.168.100.7:CVE-2008-5305,vulnerability,,,,,,,,,,CVE-2008-5305,TWiki XSS and Command Execution Vulnerabilities,10.0,0.0464,False
+vuln:192.168.100.7:fe99d4d8-ce46-4a06-8898-76579422aa29,vulnerability,,,,,,,,,,,Distributed Ruby (dRuby/DRb) Multiple Remote Code Execution Vulnerabilities,0.0,0.0,False
+vuln:192.168.100.7:17ca4f8e-c0ce-40d6-a607-6b4e88d54b72,vulnerability,,,,,,,,,,,Possible Backdoor: Ingreslock,0.0,0.0,False
+vuln:192.168.100.7:CVE-2004-2687,vulnerability,,,,,,,,,,CVE-2004-2687,DistCC Remote Code Execution Vulnerability,9.3,0.88195,False
+vuln:192.168.100.7:9f0ba2c1-1b78-42d9-a137-3176a3e73699,vulnerability,,,,,,,,,,,MySQL / MariaDB weak password,0.0,0.0,False
+vuln:192.168.100.7:fb246ef0-e2c4-46e0-bbfc-bc79e2072ce1,vulnerability,,,,,,,,,,,VNC Brute Force Login,0.0,0.0,False
+vuln:192.168.100.7:d8f33558-3e05-4f5b-b0fa-e18523974e26,vulnerability,,,,,,,,,,,PostgreSQL weak password,0.0,0.0,False
+vuln:192.168.100.7:4e36d190-277c-45b8-8cfc-44f11c1cb599,vulnerability,,,,,,,,,,,rsh Unencrypted Cleartext Login,0.0,0.0,False
+vuln:192.168.100.7:6d81c728-75b6-4c97-b1a9-94ea6347ccdf,vulnerability,,,,,,,,,,,phpinfo() output Reporting,0.0,0.0,False
+vuln:192.168.100.7:CVE-2010-1135,vulnerability,,,,,,,,,,CVE-2010-1135,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.01553,False
+vuln:192.168.100.7:CVE-2010-1134,vulnerability,,,,,,,,,,CVE-2010-1134,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.01269,False
+vuln:192.168.100.7:CVE-2010-1133,vulnerability,,,,,,,,,,CVE-2010-1133,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.01418,False
+vuln:192.168.100.7:CVE-2010-1136,vulnerability,,,,,,,,,,CVE-2010-1136,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.0167,False
+vuln:192.168.100.7:100eb630-3410-4fbd-8eef-eed3e38fe6b2,vulnerability,,,,,,,,,,,rlogin Passwordless / Unencrypted Cleartext Login,0.0,0.0,False
+vuln:192.168.100.7:b546632b-8866-469d-bb96-720343a9eab5,vulnerability,,,,,,,,,,,Test HTTP dangerous methods,0.0,0.0,False
+vuln:192.168.100.7:ce2b8e86-3ced-462b-b89e-d59375565eaf,vulnerability,,,,,,,,,,,vsftpd Compromised Source Packages Backdoor Vulnerability,0.0,0.0,False
+vuln:192.168.100.7:CVE-2012-1823,vulnerability,,,,,,,,,,CVE-2012-1823,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.,9.8,0.99998,True
+vuln:192.168.100.7:CVE-2012-2311,vulnerability,,,,,,,,,,CVE-2012-2311,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.,7.5,0.69559,False
+vuln:192.168.100.7:CVE-2012-2336,vulnerability,,,,,,,,,,CVE-2012-2336,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.,5.0,0.50723,False
+vuln:192.168.100.7:CVE-2012-2335,vulnerability,,,,,,,,,,CVE-2012-2335,PHP-CGI-based setups vulnerability when parsing query string parameters from php files.,7.5,0.32542,False
+vuln:192.168.100.7:48a6f23f-a677-46fc-9606-963282adbeea,vulnerability,,,,,,,,,,,SSH Brute Force Logins With Default Credentials Reporting,0.0,0.0,False
+vuln:192.168.100.7:CVE-2016-7144,vulnerability,,,,,,,,,,CVE-2016-7144,UnrealIRCd Authentication Spoofing Vulnerability,8.1,0.01281,False
+vuln:192.168.100.7:CVE-2009-4898,vulnerability,,,,,,,,,,CVE-2009-4898,TWiki Cross-Site Request Forgery Vulnerability - Sep10,6.8,0.00578,False
+vuln:192.168.100.7:CVE-2011-0411,vulnerability,,,,,,,,,,CVE-2011-0411,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,6.8,0.16334,False
+vuln:192.168.100.7:CVE-2011-1430,vulnerability,,,,,,,,,,CVE-2011-1430,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,6.8,0.03212,False
+vuln:192.168.100.7:CVE-2011-1431,vulnerability,,,,,,,,,,CVE-2011-1431,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,6.8,0.04593,False
+vuln:192.168.100.7:CVE-2011-1432,vulnerability,,,,,,,,,,CVE-2011-1432,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,6.8,0.02283,False
+vuln:192.168.100.7:CVE-2011-1506,vulnerability,,,,,,,,,,CVE-2011-1506,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,6.8,0.02471,False
+vuln:192.168.100.7:CVE-2011-1575,vulnerability,,,,,,,,,,CVE-2011-1575,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,5.8,0.33341,False
+vuln:192.168.100.7:CVE-2011-1926,vulnerability,,,,,,,,,,CVE-2011-1926,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,5.1,0.03999,False
+vuln:192.168.100.7:CVE-2011-2165,vulnerability,,,,,,,,,,CVE-2011-2165,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,6.8,0.05156,False
+vuln:192.168.100.7:CVE-2014-0224,vulnerability,,,,,,,,,,CVE-2014-0224,SSL/TLS: OpenSSL CCS Man in the Middle Security Bypass Vulnerability,7.4,0.95326,False
+vuln:192.168.100.7:CVE-2018-20719,vulnerability,,,,,,,,,,CVE-2018-20719,Tiki Wiki CMS Groupware < 17.2 SQL Injection Vulnerability,8.8,0.00995,False
+vuln:192.168.100.7:6d6d6aa5-f574-4cb1-bd3e-66253bf76fd8,vulnerability,,,,,,,,,,,Anonymous FTP Login Reporting,0.0,0.0,False
+vuln:192.168.100.7:CVE-2009-1339,vulnerability,,,,,,,,,,CVE-2009-1339,TWiki Cross-Site Request Forgery Vulnerability,6.0,0.00748,False
+vuln:192.168.100.7:CVE-2003-1567,vulnerability,,,,,,,,,,CVE-2003-1567,HTTP Debugging Methods (TRACE/TRACK) Enabled,7.5,0.25249,False
+vuln:192.168.100.7:CVE-2004-2320,vulnerability,,,,,,,,,,CVE-2004-2320,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.3,0.02582,False
+vuln:192.168.100.7:CVE-2004-2763,vulnerability,,,,,,,,,,CVE-2004-2763,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.8,0.02178,False
+vuln:192.168.100.7:CVE-2005-3398,vulnerability,,,,,,,,,,CVE-2005-3398,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.13108,False
+vuln:192.168.100.7:CVE-2006-4683,vulnerability,,,,,,,,,,CVE-2006-4683,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.0,0.0133,False
+vuln:192.168.100.7:CVE-2007-3008,vulnerability,,,,,,,,,,CVE-2007-3008,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.01454,False
+vuln:192.168.100.7:CVE-2008-7253,vulnerability,,,,,,,,,,CVE-2008-7253,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.02093,False
+vuln:192.168.100.7:CVE-2009-2823,vulnerability,,,,,,,,,,CVE-2009-2823,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.01684,False
+vuln:192.168.100.7:CVE-2010-0386,vulnerability,,,,,,,,,,CVE-2010-0386,HTTP Debugging Methods (TRACE/TRACK) Enabled,8.1,0.01692,False
+vuln:192.168.100.7:CVE-2012-2223,vulnerability,,,,,,,,,,CVE-2012-2223,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.01344,False
+vuln:192.168.100.7:CVE-2014-7883,vulnerability,,,,,,,,,,CVE-2014-7883,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.0,0.37022,False
+vuln:192.168.100.7:265082aa-8856-41ed-86f0-e346938b252c,vulnerability,,,,,,,,,,,SSL/TLS: Certificate Expired,0.0,0.0,False
+vuln:192.168.100.7:eb40c19b-701c-4832-91e1-1e224c690cd9,vulnerability,,,,,,,,,,,SSL/TLS: Certificate Expired,0.0,0.0,False
+vuln:192.168.100.7:CVE-2008-5318,vulnerability,,,,,,,,,,CVE-2008-5318,Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability,5.0,0.01268,False
+vuln:192.168.100.7:CVE-2008-5319,vulnerability,,,,,,,,,,CVE-2008-5319,Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability,5.0,0.01268,False
+vuln:192.168.100.7:CVE-2016-10143,vulnerability,,,,,,,,,,CVE-2016-10143,Tiki Wiki CMS Groupware fixedURLData Local File Inclusion Vulnerability,7.5,0.01849,False
+vuln:192.168.100.7:1986cf87-3518-4da3-b2f7-9bd475c78e05,vulnerability,,,,,,,,,,,Check if Mailserver answer to VRFY and EXPN requests,0.0,0.0,False
+vuln:192.168.100.7:CVE-1999-0678,vulnerability,,,,,,,,,,CVE-1999-0678,/doc directory browsable,5.0,0.31408,False
+vuln:192.168.100.7:8aba0e81-b229-461c-8187-1ef340bfb8ec,vulnerability,,,,,,,,,,,awiki Multiple Local File Include Vulnerabilities,0.0,0.0,False
+vuln:192.168.100.7:e3386a5f-2dd1-4cdd-a9fb-56e9f89a49c3,vulnerability,,,,,,,,,,,VNC Server Unencrypted Data Transmission,0.0,0.0,False
+vuln:192.168.100.7:df19ee47-23bf-4fc6-b726-a76bc76ec05e,vulnerability,,,,,,,,,,,FTP Unencrypted Cleartext Login,0.0,0.0,False
+vuln:192.168.100.7:87825a56-4bd5-4713-9bed-5143f3979ff3,vulnerability,,,,,,,,,,,FTP Unencrypted Cleartext Login,0.0,0.0,False
+vuln:192.168.100.7:4316c86c-d6ab-4e1d-a9d1-2b058515dc95,vulnerability,,,,,,,,,,,Telnet Unencrypted Cleartext Login,0.0,0.0,False
+vuln:192.168.100.7:b6fdcd8e-9826-4be5-8848-9e922358b0f0,vulnerability,,,,,,,,,,,Cleartext Transmission of Sensitive Information via HTTP,0.0,0.0,False
+vuln:192.168.100.7:788c6c77-1a5f-4774-ad33-391f56edc179,vulnerability,,,,,,,,,,,SSH Weak Encryption Algorithms Supported,0.0,0.0,False
+vuln:192.168.100.7:CVE-2016-0800,vulnerability,,,,,,,,,,CVE-2016-0800,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection,5.9,0.82112,False
+vuln:192.168.100.7:CVE-2014-3566,vulnerability,,,,,,,,,,CVE-2014-3566,SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE),3.4,0.99999,False
+vuln:192.168.100.7:CVE-2013-2566,vulnerability,,,,,,,,,,CVE-2013-2566,SSL/TLS: Report Weak Cipher Suites,5.9,0.84424,False
+vuln:192.168.100.7:CVE-2015-2808,vulnerability,,,,,,,,,,CVE-2015-2808,SSL/TLS: Report Weak Cipher Suites,3.7,0.73851,False
+vuln:192.168.100.7:CVE-2015-4000,vulnerability,,,,,,,,,,CVE-2015-4000,SSL/TLS: DHE_EXPORT Man in the Middle Security Bypass Vulnerability (LogJam),3.7,0.9986,False
+vuln:192.168.100.7:CVE-2015-0204,vulnerability,,,,,,,,,,CVE-2015-0204,SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK),4.3,0.98685,False
+vuln:192.168.100.7:CVE-2018-20212,vulnerability,,,,,,,,,,CVE-2018-20212,TWiki < 6.1.0 XSS Vulnerability,6.1,0.01586,False
+vuln:192.168.100.7:CVE-2012-0053,vulnerability,,,,,,,,,,CVE-2012-0053,Apache HTTP Server httpOnly Cookie Information Disclosure Vulnerability,4.3,0.82756,False
+vuln:192.168.100.7:CVE-2010-4480,vulnerability,,,,,,,,,,CVE-2010-4480,phpMyAdmin error.php Cross Site Scripting Vulnerability,4.3,0.05829,False
+vuln:192.168.100.7:4ab34edf-a7d5-4911-a307-a22d29d9bf4f,vulnerability,,,,,,,,,,,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,0.0,0.0,False
+vuln:192.168.100.7:4b22b90b-4d47-45b8-a960-79c0e3e7c209,vulnerability,,,,,,,,,,,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,0.0,0.0,False
+vuln:192.168.100.7:0914e61c-ef65-491f-a50d-14b3233277af,vulnerability,,,,,,,,,,,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,0.0,0.0,False
+vuln:192.168.100.7:f09127a0-03b3-4ad4-b30e-cb888438677e,vulnerability,,,,,,,,,,,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,0.0,0.0,False
+vuln:192.168.100.7:CVE-2018-7188,vulnerability,,,,,,,,,,CVE-2018-7188,Tiki Wiki CMS Groupware XSS Vulnerability,5.4,0.00516,False
+vuln:192.168.100.7:6b78e7e5-4b49-499d-a211-53106bbb6e81,vulnerability,,,,,,,,,,,SSH Weak MAC Algorithms Supported,0.0,0.0,False
+vuln:192.168.100.8:CVE-2011-3192,vulnerability,,,,,,,,,,CVE-2011-3192,Apache httpd Web Server Range Header Denial of Service Vulnerability,7.8,0.98945,False
+vuln:192.168.100.8:7b588036-d6dd-44e4-9102-73c0bc5d9742,vulnerability,,,,,,,,,,,Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities,0.0,0.0,False
+vuln:192.168.100.8:c260e351-dae8-4456-b4e4-c7bc3e7ac66e,vulnerability,,,,,,,,,,,Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities,0.0,0.0,False
+vuln:192.168.100.8:e895d757-cb4a-484a-92f1-91c6c7b0f215,vulnerability,,,,,,,,,,,phpinfo() output Reporting,0.0,0.0,False
+vuln:192.168.100.8:52f4dff6-b3b6-43b4-a376-a6a299d3797d,vulnerability,,,,,,,,,,,phpinfo() output Reporting,0.0,0.0,False
+vuln:192.168.100.8:CVE-2010-1135,vulnerability,,,,,,,,,,CVE-2010-1135,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.01553,False
+vuln:192.168.100.8:CVE-2010-1134,vulnerability,,,,,,,,,,CVE-2010-1134,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.01269,False
+vuln:192.168.100.8:CVE-2010-1133,vulnerability,,,,,,,,,,CVE-2010-1133,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.01418,False
+vuln:192.168.100.8:CVE-2010-1136,vulnerability,,,,,,,,,,CVE-2010-1136,Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities,7.5,0.0167,False
+vuln:192.168.100.8:CVE-2018-15880,vulnerability,,,,,,,,,,CVE-2018-15880,Joomla! < 3.8.12 Multiple Vulnerabilities,5.4,0.01033,False
+vuln:192.168.100.8:CVE-2018-15882,vulnerability,,,,,,,,,,CVE-2018-15882,Joomla! < 3.8.12 Multiple Vulnerabilities,9.8,0.02932,False
+vuln:192.168.100.8:5467068c-d616-4a4c-aba7-047ccb657d1e,vulnerability,,,,,,,,,,,Apache Tomcat Manager Remote Unauthorized Access Vulnerability,0.0,0.0,False
+vuln:192.168.100.8:CVE-2014-8363,vulnerability,,,,,,,,,,CVE-2014-8363,WordPress Spreadsheet plugin Multiple Vulnerabilities,7.5,0.02149,False
+vuln:192.168.100.8:CVE-2014-8364,vulnerability,,,,,,,,,,CVE-2014-8364,WordPress Spreadsheet plugin Multiple Vulnerabilities,4.3,0.01633,False
+vuln:192.168.100.8:CVE-2010-0636,vulnerability,,,,,,,,,,CVE-2010-0636,WebCalendar Multiple CSS and CSRF Vulnerabilities,4.3,0.01065,False
+vuln:192.168.100.8:CVE-2010-0637,vulnerability,,,,,,,,,,CVE-2010-0637,WebCalendar Multiple CSS and CSRF Vulnerabilities,6.8,0.00599,False
+vuln:192.168.100.8:CVE-2010-0638,vulnerability,,,,,,,,,,CVE-2010-0638,WebCalendar Multiple CSS and CSRF Vulnerabilities,6.8,0.00571,False
+vuln:192.168.100.8:63268a34-433a-4469-9a3a-78aed1609dae,vulnerability,,,,,,,,,,,Apache Tomcat servlet/JSP container default files,0.0,0.0,False
+vuln:192.168.100.8:CVE-2014-0224,vulnerability,,,,,,,,,,CVE-2014-0224,SSL/TLS: OpenSSL CCS Man in the Middle Security Bypass Vulnerability,7.4,0.95326,False
+vuln:192.168.100.8:CVE-2018-20719,vulnerability,,,,,,,,,,CVE-2018-20719,Tiki Wiki CMS Groupware < 17.2 SQL Injection Vulnerability,8.8,0.00995,False
+vuln:192.168.100.8:CVE-2018-17855,vulnerability,,,,,,,,,,CVE-2018-17855,Joomla! < 3.8.13 ACL Violation Vulnerability,8.8,0.019,False
+vuln:192.168.100.8:CVE-2003-1567,vulnerability,,,,,,,,,,CVE-2003-1567,HTTP Debugging Methods (TRACE/TRACK) Enabled,7.5,0.25249,False
+vuln:192.168.100.8:CVE-2004-2320,vulnerability,,,,,,,,,,CVE-2004-2320,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.3,0.02582,False
+vuln:192.168.100.8:CVE-2004-2763,vulnerability,,,,,,,,,,CVE-2004-2763,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.8,0.02178,False
+vuln:192.168.100.8:CVE-2005-3398,vulnerability,,,,,,,,,,CVE-2005-3398,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.13108,False
+vuln:192.168.100.8:CVE-2006-4683,vulnerability,,,,,,,,,,CVE-2006-4683,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.0,0.0133,False
+vuln:192.168.100.8:CVE-2007-3008,vulnerability,,,,,,,,,,CVE-2007-3008,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.01454,False
+vuln:192.168.100.8:CVE-2008-7253,vulnerability,,,,,,,,,,CVE-2008-7253,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.02093,False
+vuln:192.168.100.8:CVE-2009-2823,vulnerability,,,,,,,,,,CVE-2009-2823,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.01684,False
+vuln:192.168.100.8:CVE-2010-0386,vulnerability,,,,,,,,,,CVE-2010-0386,HTTP Debugging Methods (TRACE/TRACK) Enabled,8.1,0.01692,False
+vuln:192.168.100.8:CVE-2012-2223,vulnerability,,,,,,,,,,CVE-2012-2223,HTTP Debugging Methods (TRACE/TRACK) Enabled,4.3,0.01344,False
+vuln:192.168.100.8:CVE-2014-7883,vulnerability,,,,,,,,,,CVE-2014-7883,HTTP Debugging Methods (TRACE/TRACK) Enabled,5.0,0.37022,False
+vuln:192.168.100.8:CVE-2016-2183,vulnerability,,,,,,,,,,CVE-2016-2183,SSL/TLS: Report Vulnerable Cipher Suites for HTTPS,7.5,0.95707,False
+vuln:192.168.100.8:CVE-2016-6329,vulnerability,,,,,,,,,,CVE-2016-6329,SSL/TLS: Report Vulnerable Cipher Suites for HTTPS,5.9,0.0594,False
+vuln:192.168.100.8:CVE-2017-14596,vulnerability,,,,,,,,,,CVE-2017-14596,Joomla! Core LDAP Information Disclosure Vulnerability Nov17,9.8,0.06878,False
+vuln:192.168.100.8:CVE-2017-7983,vulnerability,,,,,,,,,,CVE-2017-7983,Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities,5.3,0.01129,False
+vuln:192.168.100.8:CVE-2017-7986,vulnerability,,,,,,,,,,CVE-2017-7986,Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities,6.1,0.00787,False
+vuln:192.168.100.8:CVE-2017-7985,vulnerability,,,,,,,,,,CVE-2017-7985,Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities,6.1,0.01333,False
+vuln:192.168.100.8:98fcad6b-1eca-442a-922e-937211b0da11,vulnerability,,,,,,,,,,,Source Control Management (SCM) Files Accessible,0.0,0.0,False
+vuln:192.168.100.8:39d4b859-0873-4cf4-9e21-0a53b79901bd,vulnerability,,,,,,,,,,,Source Control Management (SCM) Files Accessible,0.0,0.0,False
+vuln:192.168.100.8:CVE-2008-5318,vulnerability,,,,,,,,,,CVE-2008-5318,Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability,5.0,0.01268,False
+vuln:192.168.100.8:CVE-2008-5319,vulnerability,,,,,,,,,,CVE-2008-5319,Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability,5.0,0.01268,False
+vuln:192.168.100.8:df781c15-223b-4617-a039-28a0b77b315c,vulnerability,,,,,,,,,,,SSL/TLS: Certificate Expired,0.0,0.0,False
+vuln:192.168.100.8:CVE-2016-1776,vulnerability,,,,,,,,,,CVE-2016-1776,MacOS X Finder .DS_Store Information Disclosure,5.3,0.01813,False
+vuln:192.168.100.8:CVE-2018-6470,vulnerability,,,,,,,,,,CVE-2018-6470,MacOS X Finder .DS_Store Information Disclosure,5.3,0.01065,False
+vuln:192.168.100.8:CVE-2016-10143,vulnerability,,,,,,,,,,CVE-2016-10143,Tiki Wiki CMS Groupware fixedURLData Local File Inclusion Vulnerability,7.5,0.01849,False
+vuln:192.168.100.8:CVE-2006-2247,vulnerability,,,,,,,,,,CVE-2006-2247,WebCalendar User Account Enumeration Disclosure Issue,5.0,0.01655,False
+vuln:192.168.100.8:b41e8702-3c76-4f26-b9f5-da2d87e22191,vulnerability,,,,,,,,,,,Sensitive File Disclosure (HTTP),0.0,0.0,False
+vuln:192.168.100.8:1b4875cc-bee0-4661-b7bd-a267fa5ec991,vulnerability,,,,,,,,,,,awiki Multiple Local File Include Vulnerabilities,0.0,0.0,False
+vuln:192.168.100.8:521adaef-7c7c-4f55-b1b2-9f065f4d12bb,vulnerability,,,,,,,,,,,awiki Multiple Local File Include Vulnerabilities,0.0,0.0,False
+vuln:192.168.100.8:76271cf1-58a7-4850-be16-1b74b0cddbc1,vulnerability,,,,,,,,,,,Cleartext Transmission of Sensitive Information via HTTP,0.0,0.0,False
+vuln:192.168.100.8:eab80bde-56fa-45b7-b810-c51b67f3b151,vulnerability,,,,,,,,,,,Cleartext Transmission of Sensitive Information via HTTP,0.0,0.0,False
+vuln:192.168.100.8:b78bc3fc-6531-4577-b162-d5267b796f45,vulnerability,,,,,,,,,,,SSH Weak Encryption Algorithms Supported,0.0,0.0,False
+vuln:192.168.100.8:CVE-2016-0800,vulnerability,,,,,,,,,,CVE-2016-0800,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection,5.9,0.82112,False
+vuln:192.168.100.8:CVE-2014-3566,vulnerability,,,,,,,,,,CVE-2014-3566,SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE),3.4,0.99999,False
+vuln:192.168.100.8:CVE-2013-2566,vulnerability,,,,,,,,,,CVE-2013-2566,SSL/TLS: Report Weak Cipher Suites,5.9,0.84424,False
+vuln:192.168.100.8:CVE-2015-2808,vulnerability,,,,,,,,,,CVE-2015-2808,SSL/TLS: Report Weak Cipher Suites,3.7,0.73851,False
+vuln:192.168.100.8:CVE-2015-4000,vulnerability,,,,,,,,,,CVE-2015-4000,SSL/TLS: Report Weak Cipher Suites,3.7,0.9986,False
+vuln:192.168.100.8:CVE-2003-1418,vulnerability,,,,,,,,,,CVE-2003-1418,Apache Web Server ETag Header Information Disclosure Weakness,4.3,0.06581,False
+vuln:192.168.100.8:CVE-2018-6379,vulnerability,,,,,,,,,,CVE-2018-6379,Joomla! Uri class XSS Vulnerability,6.1,0.01665,False
+vuln:192.168.100.8:CVE-2012-6708,vulnerability,,,,,,,,,,CVE-2012-6708,jQuery < 1.9.0 XSS Vulnerability,6.1,0.08632,False
+vuln:192.168.100.8:CVE-2018-6378,vulnerability,,,,,,,,,,CVE-2018-6378,Joomla! Core Media Manager XSS Vulnerability (20180509),6.1,0.01413,False
+vuln:192.168.100.8:3e0962d7-a130-430f-a459-db07c3588dff,vulnerability,,,,,,,,,,,WebCalendar Multiple Cross Site Scripting Vulnerabilities,0.0,0.0,False
+vuln:192.168.100.8:CVE-2017-11612,vulnerability,,,,,,,,,,CVE-2017-11612,Joomla! Core Cross-Site Scripting Vulnerability - July17,6.1,0.00965,False
+vuln:192.168.100.8:CVE-2010-3712,vulnerability,,,,,,,,,,CVE-2010-3712,Joomla! Multiple Cross-site Scripting Vulnerabilities,4.3,0.01528,False
+vuln:192.168.100.8:CVE-2012-0053,vulnerability,,,,,,,,,,CVE-2012-0053,Apache HTTP Server httpOnly Cookie Information Disclosure Vulnerability,4.3,0.82756,False
+vuln:192.168.100.8:CVE-2010-4480,vulnerability,,,,,,,,,,CVE-2010-4480,phpMyAdmin error.php Cross Site Scripting Vulnerability,4.3,0.05829,False
+vuln:192.168.100.8:f3e47bcd-8097-4779-bae0-ffdbf316ba73,vulnerability,,,,,,,,,,,OrangeHRM jobVacancy.php Cross Site Scripting Vulnerability,0.0,0.0,False
+vuln:192.168.100.8:c7c6ffa6-15d7-4ebe-9414-f1bf7e81bdb0,vulnerability,,,,,,,,,,,OrangeHRM jobVacancy.php Cross Site Scripting Vulnerability,0.0,0.0,False
+vuln:192.168.100.8:CVE-2009-1204,vulnerability,,,,,,,,,,CVE-2009-1204,Tiki Wiki CMS Groupware Multiple Cross Site Scripting Vulnerabilities,4.3,0.0454,False
+vuln:192.168.100.8:7dfca94b-fc82-4bbf-8bab-43c5bddc308e,vulnerability,,,,,,,,,,,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,0.0,0.0,False
+vuln:192.168.100.8:035381ad-669d-446a-9c20-c5fb67fd77bb,vulnerability,,,,,,,,,,,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,0.0,0.0,False
+vuln:192.168.100.8:CVE-2018-7188,vulnerability,,,,,,,,,,CVE-2018-7188,Tiki Wiki CMS Groupware XSS Vulnerability,5.4,0.00516,False
+vuln:192.168.100.8:ad7a1731-2d85-403c-afe8-b59c96b166e4,vulnerability,,,,,,,,,,,SSH Weak MAC Algorithms Supported,0.0,0.0,False
+vuln:192.168.100.8:CVE-2009-0796,vulnerability,,,,,,,,,,CVE-2009-0796,Apache mod_perl Apache::Status and Apache2::Status Cross Site Scripting Vulnerability,2.6,0.29638,False
+vuln:192.168.100.8:CVE-2012-4929,vulnerability,,,,,,,,,,CVE-2012-4929,SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME),2.6,0.04266,False
+vuln:192.168.100.8:CVE-2012-4930,vulnerability,,,,,,,,,,CVE-2012-4930,SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME),2.6,0.02079,False

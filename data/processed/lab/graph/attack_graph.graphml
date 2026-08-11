@@ -1,0 +1,2853 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d18" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d17" for="node" attr.name="kev" attr.type="boolean" />
+  <key id="d16" for="node" attr.name="epss" attr.type="double" />
+  <key id="d15" for="node" attr.name="cvss" attr.type="double" />
+  <key id="d14" for="node" attr.name="nvt" attr.type="string" />
+  <key id="d13" for="node" attr.name="cve" attr.type="string" />
+  <key id="d12" for="node" attr.name="service" attr.type="double" />
+  <key id="d11" for="node" attr.name="product" attr.type="double" />
+  <key id="d10" for="node" attr.name="product" attr.type="string" />
+  <key id="d9" for="node" attr.name="service" attr.type="string" />
+  <key id="d8" for="node" attr.name="protocol" attr.type="string" />
+  <key id="d7" for="node" attr.name="port" attr.type="long" />
+  <key id="d6" for="node" attr.name="criticality" attr.type="double" />
+  <key id="d5" for="node" attr.name="target" attr.type="boolean" />
+  <key id="d4" for="node" attr.name="criticality" attr.type="string" />
+  <key id="d3" for="node" attr.name="role" attr.type="string" />
+  <key id="d2" for="node" attr.name="name" attr.type="string" />
+  <key id="d1" for="node" attr.name="ip" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="asset:192.168.100.4">
+      <data key="d0">asset</data>
+      <data key="d1">192.168.100.4</data>
+      <data key="d2">Application Server</data>
+      <data key="d3">application_server</data>
+      <data key="d4">High</data>
+      <data key="d5">False</data>
+    </node>
+    <node id="asset:192.168.100.5">
+      <data key="d0">asset</data>
+      <data key="d1">192.168.100.5</data>
+      <data key="d2">Database Server</data>
+      <data key="d3">database_server</data>
+      <data key="d4">Critical</data>
+      <data key="d5">True</data>
+    </node>
+    <node id="asset:192.168.100.6">
+      <data key="d0">asset</data>
+      <data key="d1">192.168.100.6</data>
+      <data key="d2">Kali Attacker</data>
+      <data key="d3">attacker</data>
+      <data key="d6">nan</data>
+      <data key="d5">False</data>
+    </node>
+    <node id="asset:192.168.100.7">
+      <data key="d0">asset</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d2">Metasploitable</data>
+      <data key="d3">vulnerable_server</data>
+      <data key="d4">Medium</data>
+      <data key="d5">False</data>
+    </node>
+    <node id="asset:192.168.100.8">
+      <data key="d0">asset</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d2">OWASP BWA</data>
+      <data key="d3">web_application</data>
+      <data key="d4">High</data>
+      <data key="d5">False</data>
+    </node>
+    <node id="service:192.168.100.4:22:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.4</data>
+      <data key="d7">22</data>
+      <data key="d8">tcp</data>
+      <data key="d9">ssh</data>
+      <data key="d10">OpenSSH</data>
+    </node>
+    <node id="service:192.168.100.4:80:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.4</data>
+      <data key="d7">80</data>
+      <data key="d8">tcp</data>
+      <data key="d9">http</data>
+      <data key="d10">Apache httpd</data>
+    </node>
+    <node id="service:192.168.100.5:22:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.5</data>
+      <data key="d7">22</data>
+      <data key="d8">tcp</data>
+      <data key="d9">ssh</data>
+      <data key="d10">OpenSSH</data>
+    </node>
+    <node id="service:192.168.100.5:3306:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.5</data>
+      <data key="d7">3306</data>
+      <data key="d8">tcp</data>
+      <data key="d9">mysql</data>
+      <data key="d10">MySQL</data>
+    </node>
+    <node id="service:192.168.100.7:21:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">21</data>
+      <data key="d8">tcp</data>
+      <data key="d9">ftp</data>
+      <data key="d10">vsftpd</data>
+    </node>
+    <node id="service:192.168.100.7:22:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">22</data>
+      <data key="d8">tcp</data>
+      <data key="d9">ssh</data>
+      <data key="d10">OpenSSH</data>
+    </node>
+    <node id="service:192.168.100.7:23:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">23</data>
+      <data key="d8">tcp</data>
+      <data key="d9">telnet</data>
+      <data key="d10">Linux telnetd</data>
+    </node>
+    <node id="service:192.168.100.7:25:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">25</data>
+      <data key="d8">tcp</data>
+      <data key="d9">smtp</data>
+      <data key="d10">Postfix smtpd</data>
+    </node>
+    <node id="service:192.168.100.7:53:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">53</data>
+      <data key="d8">tcp</data>
+      <data key="d9">domain</data>
+      <data key="d10">ISC BIND</data>
+    </node>
+    <node id="service:192.168.100.7:80:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">80</data>
+      <data key="d8">tcp</data>
+      <data key="d9">http</data>
+      <data key="d10">Apache httpd</data>
+    </node>
+    <node id="service:192.168.100.7:111:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">111</data>
+      <data key="d8">tcp</data>
+      <data key="d9">rpcbind</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:139:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">139</data>
+      <data key="d8">tcp</data>
+      <data key="d9">netbios-ssn</data>
+      <data key="d10">Samba smbd</data>
+    </node>
+    <node id="service:192.168.100.7:445:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">445</data>
+      <data key="d8">tcp</data>
+      <data key="d9">netbios-ssn</data>
+      <data key="d10">Samba smbd</data>
+    </node>
+    <node id="service:192.168.100.7:512:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">512</data>
+      <data key="d8">tcp</data>
+      <data key="d9">exec</data>
+      <data key="d10">netkit-rsh rexecd</data>
+    </node>
+    <node id="service:192.168.100.7:513:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">513</data>
+      <data key="d8">tcp</data>
+      <data key="d9">login</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:514:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">514</data>
+      <data key="d8">tcp</data>
+      <data key="d9">tcpwrapped</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:1099:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">1099</data>
+      <data key="d8">tcp</data>
+      <data key="d9">java-rmi</data>
+      <data key="d10">GNU Classpath grmiregistry</data>
+    </node>
+    <node id="service:192.168.100.7:1524:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">1524</data>
+      <data key="d8">tcp</data>
+      <data key="d9">bindshell</data>
+      <data key="d10">Metasploitable root shell</data>
+    </node>
+    <node id="service:192.168.100.7:2049:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">2049</data>
+      <data key="d8">tcp</data>
+      <data key="d9">nfs</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:2121:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">2121</data>
+      <data key="d8">tcp</data>
+      <data key="d9">ftp</data>
+      <data key="d10">ProFTPD</data>
+    </node>
+    <node id="service:192.168.100.7:3306:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">3306</data>
+      <data key="d8">tcp</data>
+      <data key="d9">mysql</data>
+      <data key="d10">MySQL</data>
+    </node>
+    <node id="service:192.168.100.7:3632:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">3632</data>
+      <data key="d8">tcp</data>
+      <data key="d9">distccd</data>
+      <data key="d10">distccd</data>
+    </node>
+    <node id="service:192.168.100.7:5432:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">5432</data>
+      <data key="d8">tcp</data>
+      <data key="d9">postgresql</data>
+      <data key="d10">PostgreSQL DB</data>
+    </node>
+    <node id="service:192.168.100.7:5900:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">5900</data>
+      <data key="d8">tcp</data>
+      <data key="d9">vnc</data>
+      <data key="d10">VNC</data>
+    </node>
+    <node id="service:192.168.100.7:6000:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">6000</data>
+      <data key="d8">tcp</data>
+      <data key="d9">X11</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:6667:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">6667</data>
+      <data key="d8">tcp</data>
+      <data key="d9">irc</data>
+      <data key="d10">UnrealIRCd</data>
+    </node>
+    <node id="service:192.168.100.7:6697:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">6697</data>
+      <data key="d8">tcp</data>
+      <data key="d9">irc</data>
+      <data key="d10">UnrealIRCd</data>
+    </node>
+    <node id="service:192.168.100.7:8180:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">8180</data>
+      <data key="d8">tcp</data>
+      <data key="d12">nan</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:8787:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">8787</data>
+      <data key="d8">tcp</data>
+      <data key="d9">drb</data>
+      <data key="d10">Ruby DRb RMI</data>
+    </node>
+    <node id="service:192.168.100.7:38264:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">38264</data>
+      <data key="d8">tcp</data>
+      <data key="d9">nlockmgr</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:46357:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">46357</data>
+      <data key="d8">tcp</data>
+      <data key="d9">mountd</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.7:48161:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">48161</data>
+      <data key="d8">tcp</data>
+      <data key="d9">java-rmi</data>
+      <data key="d10">GNU Classpath grmiregistry</data>
+    </node>
+    <node id="service:192.168.100.7:59135:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.7</data>
+      <data key="d7">59135</data>
+      <data key="d8">tcp</data>
+      <data key="d9">status</data>
+      <data key="d11">nan</data>
+    </node>
+    <node id="service:192.168.100.8:22:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">22</data>
+      <data key="d8">tcp</data>
+      <data key="d9">ssh</data>
+      <data key="d10">OpenSSH</data>
+    </node>
+    <node id="service:192.168.100.8:80:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">80</data>
+      <data key="d8">tcp</data>
+      <data key="d9">http</data>
+      <data key="d10">Apache httpd</data>
+    </node>
+    <node id="service:192.168.100.8:139:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">139</data>
+      <data key="d8">tcp</data>
+      <data key="d9">netbios-ssn</data>
+      <data key="d10">Samba smbd</data>
+    </node>
+    <node id="service:192.168.100.8:143:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">143</data>
+      <data key="d8">tcp</data>
+      <data key="d9">imap</data>
+      <data key="d10">Courier Imapd</data>
+    </node>
+    <node id="service:192.168.100.8:443:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">443</data>
+      <data key="d8">tcp</data>
+      <data key="d9">http</data>
+      <data key="d10">Apache httpd</data>
+    </node>
+    <node id="service:192.168.100.8:445:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">445</data>
+      <data key="d8">tcp</data>
+      <data key="d9">netbios-ssn</data>
+      <data key="d10">Samba smbd</data>
+    </node>
+    <node id="service:192.168.100.8:5001:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">5001</data>
+      <data key="d8">tcp</data>
+      <data key="d9">java-object</data>
+      <data key="d10">Java Object Serialization</data>
+    </node>
+    <node id="service:192.168.100.8:8080:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">8080</data>
+      <data key="d8">tcp</data>
+      <data key="d9">http</data>
+      <data key="d10">Apache Tomcat/Coyote JSP engine</data>
+    </node>
+    <node id="service:192.168.100.8:8081:tcp">
+      <data key="d0">service</data>
+      <data key="d1">192.168.100.8</data>
+      <data key="d7">8081</data>
+      <data key="d8">tcp</data>
+      <data key="d9">http</data>
+      <data key="d10">Jetty</data>
+    </node>
+    <node id="vuln:192.168.100.7:a9f069f7-e163-4ebb-9b97-bd6e04781a48">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">rexec Passwordless / Unencrypted Cleartext Login</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2008-5304">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-5304</data>
+      <data key="d14">TWiki XSS and Command Execution Vulnerabilities</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.02243</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2008-5305">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-5305</data>
+      <data key="d14">TWiki XSS and Command Execution Vulnerabilities</data>
+      <data key="d15">10.0</data>
+      <data key="d16">0.0464</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:fe99d4d8-ce46-4a06-8898-76579422aa29">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Distributed Ruby (dRuby/DRb) Multiple Remote Code Execution Vulnerabilities</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:17ca4f8e-c0ce-40d6-a607-6b4e88d54b72">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Possible Backdoor: Ingreslock</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2004-2687">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2004-2687</data>
+      <data key="d14">DistCC Remote Code Execution Vulnerability</data>
+      <data key="d15">9.3</data>
+      <data key="d16">0.88195</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:9f0ba2c1-1b78-42d9-a137-3176a3e73699">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">MySQL / MariaDB weak password</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:fb246ef0-e2c4-46e0-bbfc-bc79e2072ce1">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">VNC Brute Force Login</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:d8f33558-3e05-4f5b-b0fa-e18523974e26">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">PostgreSQL weak password</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:4e36d190-277c-45b8-8cfc-44f11c1cb599">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">rsh Unencrypted Cleartext Login</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:6d81c728-75b6-4c97-b1a9-94ea6347ccdf">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">phpinfo() output Reporting</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2010-1135">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1135</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01553</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2010-1134">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1134</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01269</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2010-1133">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1133</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01418</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2010-1136">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1136</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.0167</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:100eb630-3410-4fbd-8eef-eed3e38fe6b2">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">rlogin Passwordless / Unencrypted Cleartext Login</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:b546632b-8866-469d-bb96-720343a9eab5">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Test HTTP dangerous methods</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:ce2b8e86-3ced-462b-b89e-d59375565eaf">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">vsftpd Compromised Source Packages Backdoor Vulnerability</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2012-1823">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-1823</data>
+      <data key="d14">PHP-CGI-based setups vulnerability when parsing query string parameters from php files.</data>
+      <data key="d15">9.8</data>
+      <data key="d16">0.99998</data>
+      <data key="d17">True</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2012-2311">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-2311</data>
+      <data key="d14">PHP-CGI-based setups vulnerability when parsing query string parameters from php files.</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.69559</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2012-2336">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-2336</data>
+      <data key="d14">PHP-CGI-based setups vulnerability when parsing query string parameters from php files.</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.50723</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2012-2335">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-2335</data>
+      <data key="d14">PHP-CGI-based setups vulnerability when parsing query string parameters from php files.</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.32542</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:48a6f23f-a677-46fc-9606-963282adbeea">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSH Brute Force Logins With Default Credentials Reporting</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2016-7144">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-7144</data>
+      <data key="d14">UnrealIRCd Authentication Spoofing Vulnerability</data>
+      <data key="d15">8.1</data>
+      <data key="d16">0.01281</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2009-4898">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2009-4898</data>
+      <data key="d14">TWiki Cross-Site Request Forgery Vulnerability - Sep10</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.00578</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-0411">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-0411</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.16334</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-1430">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-1430</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.03212</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-1431">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-1431</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.04593</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-1432">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-1432</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.02283</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-1506">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-1506</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.02471</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-1575">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-1575</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">5.8</data>
+      <data key="d16">0.33341</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-1926">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-1926</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">5.1</data>
+      <data key="d16">0.03999</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2011-2165">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-2165</data>
+      <data key="d14">Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.05156</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2014-0224">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-0224</data>
+      <data key="d14">SSL/TLS: OpenSSL CCS Man in the Middle Security Bypass Vulnerability</data>
+      <data key="d15">7.4</data>
+      <data key="d16">0.95326</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2018-20719">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-20719</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 17.2 SQL Injection Vulnerability</data>
+      <data key="d15">8.8</data>
+      <data key="d16">0.00995</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:6d6d6aa5-f574-4cb1-bd3e-66253bf76fd8">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Anonymous FTP Login Reporting</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2009-1339">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2009-1339</data>
+      <data key="d14">TWiki Cross-Site Request Forgery Vulnerability</data>
+      <data key="d15">6.0</data>
+      <data key="d16">0.00748</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2003-1567">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2003-1567</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.25249</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2004-2320">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2004-2320</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.3</data>
+      <data key="d16">0.02582</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2004-2763">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2004-2763</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.8</data>
+      <data key="d16">0.02178</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2005-3398">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2005-3398</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.13108</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2006-4683">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2006-4683</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.0133</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2007-3008">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2007-3008</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01454</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2008-7253">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-7253</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.02093</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2009-2823">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2009-2823</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01684</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2010-0386">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-0386</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">8.1</data>
+      <data key="d16">0.01692</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2012-2223">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-2223</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01344</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2014-7883">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-7883</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.37022</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:265082aa-8856-41ed-86f0-e346938b252c">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Certificate Expired</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:eb40c19b-701c-4832-91e1-1e224c690cd9">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Certificate Expired</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2008-5318">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-5318</data>
+      <data key="d14">Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.01268</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2008-5319">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-5319</data>
+      <data key="d14">Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.01268</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2016-10143">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-10143</data>
+      <data key="d14">Tiki Wiki CMS Groupware fixedURLData Local File Inclusion Vulnerability</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01849</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:1986cf87-3518-4da3-b2f7-9bd475c78e05">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Check if Mailserver answer to VRFY and EXPN requests</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-1999-0678">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-1999-0678</data>
+      <data key="d14">/doc directory browsable</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.31408</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:8aba0e81-b229-461c-8187-1ef340bfb8ec">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">awiki Multiple Local File Include Vulnerabilities</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:e3386a5f-2dd1-4cdd-a9fb-56e9f89a49c3">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">VNC Server Unencrypted Data Transmission</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:df19ee47-23bf-4fc6-b726-a76bc76ec05e">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">FTP Unencrypted Cleartext Login</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:87825a56-4bd5-4713-9bed-5143f3979ff3">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">FTP Unencrypted Cleartext Login</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:4316c86c-d6ab-4e1d-a9d1-2b058515dc95">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Telnet Unencrypted Cleartext Login</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:b6fdcd8e-9826-4be5-8848-9e922358b0f0">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Cleartext Transmission of Sensitive Information via HTTP</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:788c6c77-1a5f-4774-ad33-391f56edc179">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSH Weak Encryption Algorithms Supported</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2016-0800">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-0800</data>
+      <data key="d14">SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection</data>
+      <data key="d15">5.9</data>
+      <data key="d16">0.82112</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2014-3566">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-3566</data>
+      <data key="d14">SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)</data>
+      <data key="d15">3.4</data>
+      <data key="d16">0.99999</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2013-2566">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2013-2566</data>
+      <data key="d14">SSL/TLS: Report Weak Cipher Suites</data>
+      <data key="d15">5.9</data>
+      <data key="d16">0.84424</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2015-2808">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2015-2808</data>
+      <data key="d14">SSL/TLS: Report Weak Cipher Suites</data>
+      <data key="d15">3.7</data>
+      <data key="d16">0.73851</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2015-4000">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2015-4000</data>
+      <data key="d14">SSL/TLS: DHE_EXPORT Man in the Middle Security Bypass Vulnerability (LogJam)</data>
+      <data key="d15">3.7</data>
+      <data key="d16">0.9986</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2015-0204">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2015-0204</data>
+      <data key="d14">SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK)</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.98685</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2018-20212">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-20212</data>
+      <data key="d14">TWiki &lt; 6.1.0 XSS Vulnerability</data>
+      <data key="d15">6.1</data>
+      <data key="d16">0.01586</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2012-0053">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-0053</data>
+      <data key="d14">Apache HTTP Server httpOnly Cookie Information Disclosure Vulnerability</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.82756</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2010-4480">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-4480</data>
+      <data key="d14">phpMyAdmin error.php Cross Site Scripting Vulnerability</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.05829</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:4ab34edf-a7d5-4911-a307-a22d29d9bf4f">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Certificate Signed Using A Weak Signature Algorithm</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:4b22b90b-4d47-45b8-a960-79c0e3e7c209">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Certificate Signed Using A Weak Signature Algorithm</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:0914e61c-ef65-491f-a50d-14b3233277af">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:f09127a0-03b3-4ad4-b30e-cb888438677e">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:CVE-2018-7188">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-7188</data>
+      <data key="d14">Tiki Wiki CMS Groupware XSS Vulnerability</data>
+      <data key="d15">5.4</data>
+      <data key="d16">0.00516</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.7:6b78e7e5-4b49-499d-a211-53106bbb6e81">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSH Weak MAC Algorithms Supported</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2011-3192">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2011-3192</data>
+      <data key="d14">Apache httpd Web Server Range Header Denial of Service Vulnerability</data>
+      <data key="d15">7.8</data>
+      <data key="d16">0.98945</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:7b588036-d6dd-44e4-9102-73c0bc5d9742">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:c260e351-dae8-4456-b4e4-c7bc3e7ac66e">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:e895d757-cb4a-484a-92f1-91c6c7b0f215">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">phpinfo() output Reporting</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:52f4dff6-b3b6-43b4-a376-a6a299d3797d">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">phpinfo() output Reporting</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-1135">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1135</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01553</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-1134">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1134</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01269</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-1133">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1133</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01418</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-1136">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-1136</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 4.2 Multiple Unspecified Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.0167</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-15880">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-15880</data>
+      <data key="d14">Joomla! &lt; 3.8.12 Multiple Vulnerabilities</data>
+      <data key="d15">5.4</data>
+      <data key="d16">0.01033</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-15882">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-15882</data>
+      <data key="d14">Joomla! &lt; 3.8.12 Multiple Vulnerabilities</data>
+      <data key="d15">9.8</data>
+      <data key="d16">0.02932</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:5467068c-d616-4a4c-aba7-047ccb657d1e">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Apache Tomcat Manager Remote Unauthorized Access Vulnerability</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2014-8363">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-8363</data>
+      <data key="d14">WordPress Spreadsheet plugin Multiple Vulnerabilities</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.02149</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2014-8364">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-8364</data>
+      <data key="d14">WordPress Spreadsheet plugin Multiple Vulnerabilities</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01633</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-0636">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-0636</data>
+      <data key="d14">WebCalendar Multiple CSS and CSRF Vulnerabilities</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01065</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-0637">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-0637</data>
+      <data key="d14">WebCalendar Multiple CSS and CSRF Vulnerabilities</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.00599</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-0638">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-0638</data>
+      <data key="d14">WebCalendar Multiple CSS and CSRF Vulnerabilities</data>
+      <data key="d15">6.8</data>
+      <data key="d16">0.00571</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:63268a34-433a-4469-9a3a-78aed1609dae">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Apache Tomcat servlet/JSP container default files</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2014-0224">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-0224</data>
+      <data key="d14">SSL/TLS: OpenSSL CCS Man in the Middle Security Bypass Vulnerability</data>
+      <data key="d15">7.4</data>
+      <data key="d16">0.95326</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-20719">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-20719</data>
+      <data key="d14">Tiki Wiki CMS Groupware &lt; 17.2 SQL Injection Vulnerability</data>
+      <data key="d15">8.8</data>
+      <data key="d16">0.00995</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-17855">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-17855</data>
+      <data key="d14">Joomla! &lt; 3.8.13 ACL Violation Vulnerability</data>
+      <data key="d15">8.8</data>
+      <data key="d16">0.019</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2003-1567">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2003-1567</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.25249</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2004-2320">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2004-2320</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.3</data>
+      <data key="d16">0.02582</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2004-2763">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2004-2763</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.8</data>
+      <data key="d16">0.02178</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2005-3398">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2005-3398</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.13108</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2006-4683">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2006-4683</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.0133</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2007-3008">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2007-3008</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01454</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2008-7253">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-7253</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.02093</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2009-2823">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2009-2823</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01684</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-0386">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-0386</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">8.1</data>
+      <data key="d16">0.01692</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2012-2223">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-2223</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01344</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2014-7883">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-7883</data>
+      <data key="d14">HTTP Debugging Methods (TRACE/TRACK) Enabled</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.37022</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2016-2183">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-2183</data>
+      <data key="d14">SSL/TLS: Report Vulnerable Cipher Suites for HTTPS</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.95707</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2016-6329">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-6329</data>
+      <data key="d14">SSL/TLS: Report Vulnerable Cipher Suites for HTTPS</data>
+      <data key="d15">5.9</data>
+      <data key="d16">0.0594</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2017-14596">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2017-14596</data>
+      <data key="d14">Joomla! Core LDAP Information Disclosure Vulnerability Nov17</data>
+      <data key="d15">9.8</data>
+      <data key="d16">0.06878</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2017-7983">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2017-7983</data>
+      <data key="d14">Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities</data>
+      <data key="d15">5.3</data>
+      <data key="d16">0.01129</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2017-7986">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2017-7986</data>
+      <data key="d14">Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities</data>
+      <data key="d15">6.1</data>
+      <data key="d16">0.00787</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2017-7985">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2017-7985</data>
+      <data key="d14">Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities</data>
+      <data key="d15">6.1</data>
+      <data key="d16">0.01333</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:98fcad6b-1eca-442a-922e-937211b0da11">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Source Control Management (SCM) Files Accessible</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:39d4b859-0873-4cf4-9e21-0a53b79901bd">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Source Control Management (SCM) Files Accessible</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2008-5318">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-5318</data>
+      <data key="d14">Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.01268</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2008-5319">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2008-5319</data>
+      <data key="d14">Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.01268</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:df781c15-223b-4617-a039-28a0b77b315c">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Certificate Expired</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2016-1776">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-1776</data>
+      <data key="d14">MacOS X Finder .DS_Store Information Disclosure</data>
+      <data key="d15">5.3</data>
+      <data key="d16">0.01813</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-6470">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-6470</data>
+      <data key="d14">MacOS X Finder .DS_Store Information Disclosure</data>
+      <data key="d15">5.3</data>
+      <data key="d16">0.01065</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2016-10143">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-10143</data>
+      <data key="d14">Tiki Wiki CMS Groupware fixedURLData Local File Inclusion Vulnerability</data>
+      <data key="d15">7.5</data>
+      <data key="d16">0.01849</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2006-2247">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2006-2247</data>
+      <data key="d14">WebCalendar User Account Enumeration Disclosure Issue</data>
+      <data key="d15">5.0</data>
+      <data key="d16">0.01655</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:b41e8702-3c76-4f26-b9f5-da2d87e22191">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Sensitive File Disclosure (HTTP)</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:1b4875cc-bee0-4661-b7bd-a267fa5ec991">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">awiki Multiple Local File Include Vulnerabilities</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:521adaef-7c7c-4f55-b1b2-9f065f4d12bb">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">awiki Multiple Local File Include Vulnerabilities</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:76271cf1-58a7-4850-be16-1b74b0cddbc1">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Cleartext Transmission of Sensitive Information via HTTP</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:eab80bde-56fa-45b7-b810-c51b67f3b151">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">Cleartext Transmission of Sensitive Information via HTTP</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:b78bc3fc-6531-4577-b162-d5267b796f45">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSH Weak Encryption Algorithms Supported</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2016-0800">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2016-0800</data>
+      <data key="d14">SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection</data>
+      <data key="d15">5.9</data>
+      <data key="d16">0.82112</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2014-3566">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2014-3566</data>
+      <data key="d14">SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)</data>
+      <data key="d15">3.4</data>
+      <data key="d16">0.99999</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2013-2566">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2013-2566</data>
+      <data key="d14">SSL/TLS: Report Weak Cipher Suites</data>
+      <data key="d15">5.9</data>
+      <data key="d16">0.84424</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2015-2808">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2015-2808</data>
+      <data key="d14">SSL/TLS: Report Weak Cipher Suites</data>
+      <data key="d15">3.7</data>
+      <data key="d16">0.73851</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2015-4000">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2015-4000</data>
+      <data key="d14">SSL/TLS: Report Weak Cipher Suites</data>
+      <data key="d15">3.7</data>
+      <data key="d16">0.9986</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2003-1418">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2003-1418</data>
+      <data key="d14">Apache Web Server ETag Header Information Disclosure Weakness</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.06581</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-6379">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-6379</data>
+      <data key="d14">Joomla! Uri class XSS Vulnerability</data>
+      <data key="d15">6.1</data>
+      <data key="d16">0.01665</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2012-6708">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-6708</data>
+      <data key="d14">jQuery &lt; 1.9.0 XSS Vulnerability</data>
+      <data key="d15">6.1</data>
+      <data key="d16">0.08632</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-6378">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-6378</data>
+      <data key="d14">Joomla! Core Media Manager XSS Vulnerability (20180509)</data>
+      <data key="d15">6.1</data>
+      <data key="d16">0.01413</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:3e0962d7-a130-430f-a459-db07c3588dff">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">WebCalendar Multiple Cross Site Scripting Vulnerabilities</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2017-11612">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2017-11612</data>
+      <data key="d14">Joomla! Core Cross-Site Scripting Vulnerability - July17</data>
+      <data key="d15">6.1</data>
+      <data key="d16">0.00965</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-3712">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-3712</data>
+      <data key="d14">Joomla! Multiple Cross-site Scripting Vulnerabilities</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.01528</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2012-0053">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-0053</data>
+      <data key="d14">Apache HTTP Server httpOnly Cookie Information Disclosure Vulnerability</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.82756</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2010-4480">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2010-4480</data>
+      <data key="d14">phpMyAdmin error.php Cross Site Scripting Vulnerability</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.05829</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:f3e47bcd-8097-4779-bae0-ffdbf316ba73">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">OrangeHRM jobVacancy.php Cross Site Scripting Vulnerability</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:c7c6ffa6-15d7-4ebe-9414-f1bf7e81bdb0">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">OrangeHRM jobVacancy.php Cross Site Scripting Vulnerability</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2009-1204">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2009-1204</data>
+      <data key="d14">Tiki Wiki CMS Groupware Multiple Cross Site Scripting Vulnerabilities</data>
+      <data key="d15">4.3</data>
+      <data key="d16">0.0454</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:7dfca94b-fc82-4bbf-8bab-43c5bddc308e">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Certificate Signed Using A Weak Signature Algorithm</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:035381ad-669d-446a-9c20-c5fb67fd77bb">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2018-7188">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2018-7188</data>
+      <data key="d14">Tiki Wiki CMS Groupware XSS Vulnerability</data>
+      <data key="d15">5.4</data>
+      <data key="d16">0.00516</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:ad7a1731-2d85-403c-afe8-b59c96b166e4">
+      <data key="d0">vulnerability</data>
+      <data key="d13" />
+      <data key="d14">SSH Weak MAC Algorithms Supported</data>
+      <data key="d15">0.0</data>
+      <data key="d16">0.0</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2009-0796">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2009-0796</data>
+      <data key="d14">Apache mod_perl Apache::Status and Apache2::Status Cross Site Scripting Vulnerability</data>
+      <data key="d15">2.6</data>
+      <data key="d16">0.29638</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2012-4929">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-4929</data>
+      <data key="d14">SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)</data>
+      <data key="d15">2.6</data>
+      <data key="d16">0.04266</data>
+      <data key="d17">False</data>
+    </node>
+    <node id="vuln:192.168.100.8:CVE-2012-4930">
+      <data key="d0">vulnerability</data>
+      <data key="d13">CVE-2012-4930</data>
+      <data key="d14">SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)</data>
+      <data key="d15">2.6</data>
+      <data key="d16">0.02079</data>
+      <data key="d17">False</data>
+    </node>
+    <edge source="asset:192.168.100.4" target="service:192.168.100.4:22:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.4" target="service:192.168.100.4:80:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.4" target="service:192.168.100.5:3306:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.4" target="service:192.168.100.7:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.4" target="service:192.168.100.8:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.5" target="service:192.168.100.5:22:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.5" target="service:192.168.100.5:3306:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.6" target="service:192.168.100.4:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.6" target="service:192.168.100.5:3306:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.6" target="service:192.168.100.7:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.6" target="service:192.168.100.8:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:21:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:22:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:23:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:25:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:53:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:80:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:111:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:139:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:445:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:512:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:513:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:514:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:1099:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:1524:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:2049:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:2121:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:3306:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:3632:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:5432:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:5900:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:6000:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:6667:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:6697:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:8180:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:8787:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:38264:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:46357:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:48161:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.7:59135:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.4:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.5:3306:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.7" target="service:192.168.100.8:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:22:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:80:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:139:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:143:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:443:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:445:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:5001:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:8080:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.8:8081:tcp">
+      <data key="d18">hosts_service</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.4:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.5:3306:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="asset:192.168.100.8" target="service:192.168.100.7:80:tcp">
+      <data key="d18">can_reach</data>
+    </edge>
+    <edge source="service:192.168.100.7:21:tcp" target="vuln:192.168.100.7:ce2b8e86-3ced-462b-b89e-d59375565eaf">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:21:tcp" target="vuln:192.168.100.7:6d6d6aa5-f574-4cb1-bd3e-66253bf76fd8">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:21:tcp" target="vuln:192.168.100.7:87825a56-4bd5-4713-9bed-5143f3979ff3">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:22:tcp" target="vuln:192.168.100.7:48a6f23f-a677-46fc-9606-963282adbeea">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:22:tcp" target="vuln:192.168.100.7:788c6c77-1a5f-4774-ad33-391f56edc179">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:22:tcp" target="vuln:192.168.100.7:6b78e7e5-4b49-499d-a211-53106bbb6e81">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:23:tcp" target="vuln:192.168.100.7:4316c86c-d6ab-4e1d-a9d1-2b058515dc95">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-0411">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-1430">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-1431">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-1432">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-1506">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-1575">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-1926">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2011-2165">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:265082aa-8856-41ed-86f0-e346938b252c">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:1986cf87-3518-4da3-b2f7-9bd475c78e05">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2016-0800">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2014-3566">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2015-4000">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:CVE-2015-0204">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:4b22b90b-4d47-45b8-a960-79c0e3e7c209">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:25:tcp" target="vuln:192.168.100.7:f09127a0-03b3-4ad4-b30e-cb888438677e">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2008-5304">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2008-5305">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:6d81c728-75b6-4c97-b1a9-94ea6347ccdf">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2010-1135">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2010-1134">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2010-1133">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2010-1136">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:b546632b-8866-469d-bb96-720343a9eab5">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2012-1823">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2012-2311">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2012-2336">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2012-2335">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2009-4898">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2018-20719">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2009-1339">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2003-1567">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2004-2320">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2004-2763">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2005-3398">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2006-4683">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2007-3008">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2008-7253">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2009-2823">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2010-0386">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2012-2223">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2014-7883">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2008-5318">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2008-5319">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2016-10143">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-1999-0678">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:8aba0e81-b229-461c-8187-1ef340bfb8ec">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:b6fdcd8e-9826-4be5-8848-9e922358b0f0">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2018-20212">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2012-0053">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2010-4480">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:80:tcp" target="vuln:192.168.100.7:CVE-2018-7188">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:512:tcp" target="vuln:192.168.100.7:a9f069f7-e163-4ebb-9b97-bd6e04781a48">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:513:tcp" target="vuln:192.168.100.7:100eb630-3410-4fbd-8eef-eed3e38fe6b2">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:514:tcp" target="vuln:192.168.100.7:4e36d190-277c-45b8-8cfc-44f11c1cb599">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:1524:tcp" target="vuln:192.168.100.7:17ca4f8e-c0ce-40d6-a607-6b4e88d54b72">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:2121:tcp" target="vuln:192.168.100.7:df19ee47-23bf-4fc6-b726-a76bc76ec05e">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:3306:tcp" target="vuln:192.168.100.7:9f0ba2c1-1b78-42d9-a137-3176a3e73699">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:3632:tcp" target="vuln:192.168.100.7:CVE-2004-2687">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:d8f33558-3e05-4f5b-b0fa-e18523974e26">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:CVE-2014-0224">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:eb40c19b-701c-4832-91e1-1e224c690cd9">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:CVE-2016-0800">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:CVE-2014-3566">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:CVE-2013-2566">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:CVE-2015-2808">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:CVE-2015-4000">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:4ab34edf-a7d5-4911-a307-a22d29d9bf4f">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5432:tcp" target="vuln:192.168.100.7:0914e61c-ef65-491f-a50d-14b3233277af">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5900:tcp" target="vuln:192.168.100.7:fb246ef0-e2c4-46e0-bbfc-bc79e2072ce1">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:5900:tcp" target="vuln:192.168.100.7:e3386a5f-2dd1-4cdd-a9fb-56e9f89a49c3">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:6667:tcp" target="vuln:192.168.100.7:CVE-2016-7144">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.7:8787:tcp" target="vuln:192.168.100.7:fe99d4d8-ce46-4a06-8898-76579422aa29">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:22:tcp" target="vuln:192.168.100.8:b78bc3fc-6531-4577-b162-d5267b796f45">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:22:tcp" target="vuln:192.168.100.8:ad7a1731-2d85-403c-afe8-b59c96b166e4">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2011-3192">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:c260e351-dae8-4456-b4e4-c7bc3e7ac66e">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:52f4dff6-b3b6-43b4-a376-a6a299d3797d">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-1135">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-1134">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-1133">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-1136">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-15880">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-15882">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2014-8363">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2014-8364">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-0636">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-0637">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-0638">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-20719">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-17855">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2003-1567">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2004-2320">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2004-2763">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2005-3398">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2006-4683">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2007-3008">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2008-7253">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2009-2823">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-0386">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2012-2223">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2014-7883">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2017-14596">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2017-7983">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2017-7986">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2017-7985">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:39d4b859-0873-4cf4-9e21-0a53b79901bd">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2008-5318">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2008-5319">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2016-1776">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-6470">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2016-10143">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2006-2247">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:521adaef-7c7c-4f55-b1b2-9f065f4d12bb">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:eab80bde-56fa-45b7-b810-c51b67f3b151">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2003-1418">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-6379">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-6378">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:3e0962d7-a130-430f-a459-db07c3588dff">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2017-11612">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-3712">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2012-0053">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2010-4480">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:c7c6ffa6-15d7-4ebe-9414-f1bf7e81bdb0">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2009-1204">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2018-7188">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:80:tcp" target="vuln:192.168.100.8:CVE-2009-0796">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2011-3192">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:7b588036-d6dd-44e4-9102-73c0bc5d9742">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:e895d757-cb4a-484a-92f1-91c6c7b0f215">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2010-1135">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2010-1134">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2010-1133">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2010-1136">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-15880">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-15882">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2014-8363">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2014-8364">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2014-0224">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-20719">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-17855">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2003-1567">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2004-2320">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2004-2763">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2005-3398">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2006-4683">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2007-3008">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2008-7253">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2009-2823">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2010-0386">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2012-2223">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2014-7883">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2016-2183">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2016-6329">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2017-14596">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2017-7983">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2017-7986">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2017-7985">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:98fcad6b-1eca-442a-922e-937211b0da11">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2008-5318">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2008-5319">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:df781c15-223b-4617-a039-28a0b77b315c">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2016-1776">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-6470">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2016-10143">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:b41e8702-3c76-4f26-b9f5-da2d87e22191">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:1b4875cc-bee0-4661-b7bd-a267fa5ec991">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2016-0800">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2014-3566">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2013-2566">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2015-2808">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2015-4000">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2003-1418">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-6379">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-6378">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2017-11612">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2010-3712">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2012-0053">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2010-4480">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:f3e47bcd-8097-4779-bae0-ffdbf316ba73">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2009-1204">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:7dfca94b-fc82-4bbf-8bab-43c5bddc308e">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:035381ad-669d-446a-9c20-c5fb67fd77bb">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2018-7188">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2009-0796">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2012-4929">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:443:tcp" target="vuln:192.168.100.8:CVE-2012-4930">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:8080:tcp" target="vuln:192.168.100.8:5467068c-d616-4a4c-aba7-047ccb657d1e">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:8080:tcp" target="vuln:192.168.100.8:63268a34-433a-4469-9a3a-78aed1609dae">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:8080:tcp" target="vuln:192.168.100.8:76271cf1-58a7-4850-be16-1b74b0cddbc1">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="service:192.168.100.8:8081:tcp" target="vuln:192.168.100.8:CVE-2012-6708">
+      <data key="d18">has_vulnerability</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:a9f069f7-e163-4ebb-9b97-bd6e04781a48" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2008-5304" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2008-5305" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:fe99d4d8-ce46-4a06-8898-76579422aa29" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:17ca4f8e-c0ce-40d6-a607-6b4e88d54b72" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2004-2687" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:9f0ba2c1-1b78-42d9-a137-3176a3e73699" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:fb246ef0-e2c4-46e0-bbfc-bc79e2072ce1" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:d8f33558-3e05-4f5b-b0fa-e18523974e26" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:4e36d190-277c-45b8-8cfc-44f11c1cb599" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:6d81c728-75b6-4c97-b1a9-94ea6347ccdf" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2010-1135" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2010-1134" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2010-1133" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2010-1136" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:100eb630-3410-4fbd-8eef-eed3e38fe6b2" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:b546632b-8866-469d-bb96-720343a9eab5" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:ce2b8e86-3ced-462b-b89e-d59375565eaf" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2012-1823" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2012-2311" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2012-2336" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2012-2335" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:48a6f23f-a677-46fc-9606-963282adbeea" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2016-7144" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2009-4898" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-0411" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-1430" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-1431" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-1432" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-1506" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-1575" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-1926" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2011-2165" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2014-0224" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2018-20719" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:6d6d6aa5-f574-4cb1-bd3e-66253bf76fd8" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2009-1339" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2003-1567" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2004-2320" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2004-2763" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2005-3398" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2006-4683" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2007-3008" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2008-7253" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2009-2823" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2010-0386" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2012-2223" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2014-7883" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:265082aa-8856-41ed-86f0-e346938b252c" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:eb40c19b-701c-4832-91e1-1e224c690cd9" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2008-5318" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2008-5319" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2016-10143" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:1986cf87-3518-4da3-b2f7-9bd475c78e05" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-1999-0678" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:8aba0e81-b229-461c-8187-1ef340bfb8ec" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:e3386a5f-2dd1-4cdd-a9fb-56e9f89a49c3" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:df19ee47-23bf-4fc6-b726-a76bc76ec05e" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:87825a56-4bd5-4713-9bed-5143f3979ff3" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:4316c86c-d6ab-4e1d-a9d1-2b058515dc95" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:b6fdcd8e-9826-4be5-8848-9e922358b0f0" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:788c6c77-1a5f-4774-ad33-391f56edc179" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2016-0800" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2014-3566" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2013-2566" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2015-2808" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2015-4000" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2015-0204" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2018-20212" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2012-0053" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2010-4480" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:4ab34edf-a7d5-4911-a307-a22d29d9bf4f" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:4b22b90b-4d47-45b8-a960-79c0e3e7c209" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:0914e61c-ef65-491f-a50d-14b3233277af" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:f09127a0-03b3-4ad4-b30e-cb888438677e" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:CVE-2018-7188" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.7:6b78e7e5-4b49-499d-a211-53106bbb6e81" target="asset:192.168.100.7">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2011-3192" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:7b588036-d6dd-44e4-9102-73c0bc5d9742" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:c260e351-dae8-4456-b4e4-c7bc3e7ac66e" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:e895d757-cb4a-484a-92f1-91c6c7b0f215" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:52f4dff6-b3b6-43b4-a376-a6a299d3797d" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-1135" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-1134" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-1133" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-1136" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-15880" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-15882" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:5467068c-d616-4a4c-aba7-047ccb657d1e" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2014-8363" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2014-8364" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-0636" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-0637" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-0638" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:63268a34-433a-4469-9a3a-78aed1609dae" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2014-0224" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-20719" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-17855" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2003-1567" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2004-2320" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2004-2763" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2005-3398" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2006-4683" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2007-3008" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2008-7253" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2009-2823" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-0386" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2012-2223" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2014-7883" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2016-2183" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2016-6329" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2017-14596" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2017-7983" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2017-7986" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2017-7985" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:98fcad6b-1eca-442a-922e-937211b0da11" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:39d4b859-0873-4cf4-9e21-0a53b79901bd" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2008-5318" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2008-5319" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:df781c15-223b-4617-a039-28a0b77b315c" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2016-1776" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-6470" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2016-10143" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2006-2247" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:b41e8702-3c76-4f26-b9f5-da2d87e22191" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:1b4875cc-bee0-4661-b7bd-a267fa5ec991" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:521adaef-7c7c-4f55-b1b2-9f065f4d12bb" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:76271cf1-58a7-4850-be16-1b74b0cddbc1" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:eab80bde-56fa-45b7-b810-c51b67f3b151" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:b78bc3fc-6531-4577-b162-d5267b796f45" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2016-0800" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2014-3566" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2013-2566" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2015-2808" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2015-4000" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2003-1418" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-6379" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2012-6708" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-6378" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:3e0962d7-a130-430f-a459-db07c3588dff" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2017-11612" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-3712" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2012-0053" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2010-4480" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:f3e47bcd-8097-4779-bae0-ffdbf316ba73" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:c7c6ffa6-15d7-4ebe-9414-f1bf7e81bdb0" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2009-1204" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:7dfca94b-fc82-4bbf-8bab-43c5bddc308e" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:035381ad-669d-446a-9c20-c5fb67fd77bb" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2018-7188" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:ad7a1731-2d85-403c-afe8-b59c96b166e4" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2009-0796" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2012-4929" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+    <edge source="vuln:192.168.100.8:CVE-2012-4930" target="asset:192.168.100.8">
+      <data key="d18">affects</data>
+    </edge>
+  </graph>
+</graphml>
