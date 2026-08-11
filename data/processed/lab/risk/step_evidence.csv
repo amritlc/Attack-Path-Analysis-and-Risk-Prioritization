@@ -1,0 +1,7 @@
+path_id,step,service,step_max_cvss,step_max_epss,step_has_kev
+P002,1,service:192.168.100.7:80:tcp,10.0,0.99998,True
+P003,1,service:192.168.100.7:80:tcp,10.0,0.99998,True
+P003,2,service:192.168.100.8:80:tcp,9.8,0.98945,False
+P004,1,service:192.168.100.8:80:tcp,9.8,0.98945,False
+P005,1,service:192.168.100.8:80:tcp,9.8,0.98945,False
+P005,2,service:192.168.100.7:80:tcp,10.0,0.99998,True
