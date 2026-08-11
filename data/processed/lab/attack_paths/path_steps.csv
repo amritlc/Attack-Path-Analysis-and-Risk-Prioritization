@@ -1,0 +1,12 @@
+path_id,step,source,destination,service,step_type,vulnerability_count
+P001,1,asset:192.168.100.6,asset:192.168.100.5,service:192.168.100.5:3306:tcp,target_reach,0
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,candidate_compromise,36
+P002,2,asset:192.168.100.7,asset:192.168.100.5,service:192.168.100.5:3306:tcp,target_reach,0
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,candidate_compromise,36
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,candidate_compromise,52
+P003,3,asset:192.168.100.8,asset:192.168.100.5,service:192.168.100.5:3306:tcp,target_reach,0
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,candidate_compromise,52
+P004,2,asset:192.168.100.8,asset:192.168.100.5,service:192.168.100.5:3306:tcp,target_reach,0
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,candidate_compromise,52
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,candidate_compromise,36
+P005,3,asset:192.168.100.7,asset:192.168.100.5,service:192.168.100.5:3306:tcp,target_reach,0
