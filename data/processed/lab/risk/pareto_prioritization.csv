@@ -1,0 +1,6 @@
+path_id,compromise_steps,bottleneck_cvss,bottleneck_epss,kev_steps,kev_coverage,evidence_front
+P002,1,10.0,0.99998,1,1.0,1
+P003,2,9.8,0.98945,1,0.5,2
+P005,2,9.8,0.98945,1,0.5,2
+P004,1,9.8,0.98945,0,0.0,3
+P001,0,,,0,,
