@@ -1,0 +1,4 @@
+benchmark,component_validated,result,recovery,passed
+DARPA LLDOS 1.0,Multi-stage sequence recovery,5/5 stages,1.0,True
+MulVAL 3-host,Graph structural compatibility,7/7 checks,1.0,True
+NOMS 2022,CVE-to-ATT&CK AI context,2/2 mappings,1.0,True

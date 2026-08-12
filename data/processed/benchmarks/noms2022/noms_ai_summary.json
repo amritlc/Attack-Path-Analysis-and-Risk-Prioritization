@@ -1,0 +1,10 @@
+{
+  "original_training_rows": 1344,
+  "benchmark_training_rows": 1342,
+  "held_out_cves": 2,
+  "exact_description_duplicates": 0,
+  "selected_threshold": 0.18144830490849725,
+  "reference_mappings": 2,
+  "recovered_mappings": 2,
+  "reference_recovery": 1.0
+}
