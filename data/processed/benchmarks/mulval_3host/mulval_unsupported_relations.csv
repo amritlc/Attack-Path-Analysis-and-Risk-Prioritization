@@ -1,0 +1,4 @@
+type,source,destination,detail
+nfs_export,fileServer,workStation,/export
+nfs_export,fileServer,webServer,/export
+nfs_mount,workStation,fileServer,/usr/local/share -> /export

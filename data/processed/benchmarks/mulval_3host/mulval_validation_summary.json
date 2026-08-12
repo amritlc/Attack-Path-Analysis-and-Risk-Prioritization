@@ -1,0 +1,6 @@
+{
+  "supported_checks": 7,
+  "passed_checks": 7,
+  "all_supported_structure_recovered": true,
+  "unsupported_relation_count": 3
+}

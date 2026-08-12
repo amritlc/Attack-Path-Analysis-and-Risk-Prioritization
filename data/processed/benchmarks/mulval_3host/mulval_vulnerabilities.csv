@@ -1,0 +1,3 @@
+asset,vulnerability,service
+webServer,CAN-2002-0392,httpd
+fileServer,vulID,mountd

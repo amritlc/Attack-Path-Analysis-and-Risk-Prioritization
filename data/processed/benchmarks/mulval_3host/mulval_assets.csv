@@ -1,0 +1,5 @@
+asset,role
+internet,attacker
+webServer,server
+fileServer,server
+workStation,target

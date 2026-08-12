@@ -1,0 +1,3 @@
+asset,service,protocol,port,product
+webServer,httpd,tcp,80,apache
+fileServer,mountd,rpc,100005,
