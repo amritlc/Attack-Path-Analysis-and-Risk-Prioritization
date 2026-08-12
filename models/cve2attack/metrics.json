@@ -1,0 +1,10 @@
+{
+  "training_rows": 1344,
+  "test_rows": 317,
+  "attack_labels": 31,
+  "micro_precision": 0.9056603773584906,
+  "micro_recall": 0.07868852459016394,
+  "micro_f1": 0.14479638009049775,
+  "macro_f1": 0.04745375340850389,
+  "hamming_loss": 0.057698178487839626
+}
