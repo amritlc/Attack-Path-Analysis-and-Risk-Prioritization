@@ -1,0 +1,142 @@
+cve_id,provenance,attack_technique,model_probability,threshold
+CVE-1999-0678,unseen,Exploit Public-Facing Application,0.213117,0.173183
+CVE-2003-1418,unseen,Exploit Public-Facing Application,0.272028,0.173183
+CVE-2003-1567,unseen,Exploit Public-Facing Application,0.204233,0.173183
+CVE-2004-2320,unseen,Command and Scripting Interpreter,0.343119,0.173183
+CVE-2004-2320,unseen,Exploit Public-Facing Application,0.241207,0.173183
+CVE-2004-2687,unseen,Exploit Public-Facing Application,0.470819,0.173183
+CVE-2004-2687,unseen,Command and Scripting Interpreter,0.268351,0.173183
+CVE-2004-2687,unseen,Exploitation for Client Execution,0.241145,0.173183
+CVE-2004-2763,unseen,Command and Scripting Interpreter,0.351363,0.173183
+CVE-2004-2763,unseen,Exploit Public-Facing Application,0.246926,0.173183
+CVE-2004-2763,unseen,Drive-by Compromise,0.184139,0.173183
+CVE-2005-3398,unseen,Exploit Public-Facing Application,0.266519,0.173183
+CVE-2006-2247,unseen,Exploit Public-Facing Application,0.230674,0.173183
+CVE-2006-2247,unseen,Exploitation for Client Execution,0.205006,0.173183
+CVE-2006-4683,unseen,Exploit Public-Facing Application,0.281474,0.173183
+CVE-2007-3008,unseen,Exploitation for Client Execution,0.198339,0.173183
+CVE-2008-5304,unseen,Command and Scripting Interpreter,0.617672,0.173183
+CVE-2008-5304,unseen,Exploit Public-Facing Application,0.304367,0.173183
+CVE-2008-5304,unseen,Drive-by Compromise,0.216557,0.173183
+CVE-2008-5304,unseen,Exploitation for Client Execution,0.19099,0.173183
+CVE-2008-5305,unseen,Exploit Public-Facing Application,0.503058,0.173183
+CVE-2008-5305,unseen,Command and Scripting Interpreter,0.434387,0.173183
+CVE-2008-5305,unseen,Exploitation for Client Execution,0.368316,0.173183
+CVE-2008-5319,unseen,Exploitation for Client Execution,0.198435,0.173183
+CVE-2008-5319,unseen,Exploit Public-Facing Application,0.19026,0.173183
+CVE-2008-7253,unseen,Exploit Public-Facing Application,0.237316,0.173183
+CVE-2009-0796,unseen,Command and Scripting Interpreter,0.490965,0.173183
+CVE-2009-0796,unseen,Exploit Public-Facing Application,0.337203,0.173183
+CVE-2009-1204,unseen,Command and Scripting Interpreter,0.618723,0.173183
+CVE-2009-1204,unseen,Exploit Public-Facing Application,0.46152,0.173183
+CVE-2009-1204,unseen,Drive-by Compromise,0.258197,0.173183
+CVE-2009-1204,unseen,Exploitation for Client Execution,0.189308,0.173183
+CVE-2009-1339,unseen,Exploitation for Privilege Escalation,0.217264,0.173183
+CVE-2009-2823,unseen,Command and Scripting Interpreter,0.310436,0.173183
+CVE-2009-2823,unseen,Exploitation for Client Execution,0.233379,0.173183
+CVE-2009-2823,unseen,Exploit Public-Facing Application,0.226734,0.173183
+CVE-2009-4898,unseen,Exploitation for Privilege Escalation,0.246931,0.173183
+CVE-2009-4898,unseen,Command and Scripting Interpreter,0.175366,0.173183
+CVE-2010-0386,unseen,Exploit Public-Facing Application,0.201692,0.173183
+CVE-2010-0386,unseen,Exploitation for Client Execution,0.175315,0.173183
+CVE-2010-0636,unseen,Command and Scripting Interpreter,0.55186,0.173183
+CVE-2010-0636,unseen,Exploit Public-Facing Application,0.463177,0.173183
+CVE-2010-0636,unseen,Drive-by Compromise,0.219548,0.173183
+CVE-2010-0637,unseen,Exploit Public-Facing Application,0.192514,0.173183
+CVE-2010-0637,unseen,Exploitation for Privilege Escalation,0.191737,0.173183
+CVE-2010-0637,unseen,Command and Scripting Interpreter,0.175186,0.173183
+CVE-2010-0638,unseen,Exploitation for Privilege Escalation,0.190264,0.173183
+CVE-2010-1133,unseen,Exploit Public-Facing Application,0.663397,0.173183
+CVE-2010-1133,unseen,Command and Scripting Interpreter,0.627189,0.173183
+CVE-2010-1133,unseen,Exploitation for Client Execution,0.229834,0.173183
+CVE-2010-1134,unseen,Command and Scripting Interpreter,0.702601,0.173183
+CVE-2010-1134,unseen,Exploit Public-Facing Application,0.572001,0.173183
+CVE-2010-1134,unseen,Exploitation for Client Execution,0.25021,0.173183
+CVE-2010-1135,unseen,Exploit Public-Facing Application,0.241661,0.173183
+CVE-2010-1136,unseen,Exploit Public-Facing Application,0.337205,0.173183
+CVE-2010-1136,unseen,Exploitation for Client Execution,0.178778,0.173183
+CVE-2010-3712,unseen,Command and Scripting Interpreter,0.497798,0.173183
+CVE-2010-3712,unseen,Exploit Public-Facing Application,0.45748,0.173183
+CVE-2010-3712,unseen,Exploitation for Client Execution,0.223034,0.173183
+CVE-2010-4480,unseen,Command and Scripting Interpreter,0.424091,0.173183
+CVE-2010-4480,unseen,Exploitation for Client Execution,0.281782,0.173183
+CVE-2010-4480,unseen,Exploit Public-Facing Application,0.203458,0.173183
+CVE-2010-4480,unseen,Drive-by Compromise,0.181294,0.173183
+CVE-2011-0411,unseen,Command and Scripting Interpreter,0.248923,0.173183
+CVE-2011-0411,unseen,Exploit Public-Facing Application,0.21083,0.173183
+CVE-2011-1430,unseen,Command and Scripting Interpreter,0.209178,0.173183
+CVE-2011-1430,unseen,Exploit Public-Facing Application,0.205642,0.173183
+CVE-2011-1431,unseen,Command and Scripting Interpreter,0.225325,0.173183
+CVE-2011-1431,unseen,Exploit Public-Facing Application,0.174587,0.173183
+CVE-2011-1432,unseen,Command and Scripting Interpreter,0.22813,0.173183
+CVE-2011-1432,unseen,Exploit Public-Facing Application,0.203666,0.173183
+CVE-2011-1506,unseen,Command and Scripting Interpreter,0.194872,0.173183
+CVE-2011-1506,unseen,Exploit Public-Facing Application,0.179725,0.173183
+CVE-2011-1575,unseen,Command and Scripting Interpreter,0.218556,0.173183
+CVE-2011-1575,unseen,Exploit Public-Facing Application,0.203069,0.173183
+CVE-2011-1926,unseen,Command and Scripting Interpreter,0.227832,0.173183
+CVE-2011-1926,unseen,Exploit Public-Facing Application,0.206159,0.173183
+CVE-2011-2165,unseen,Command and Scripting Interpreter,0.225053,0.173183
+CVE-2011-2165,unseen,Exploit Public-Facing Application,0.189688,0.173183
+CVE-2011-3192,train_seen,Exploitation for Client Execution,0.357422,0.173183
+CVE-2011-3192,train_seen,Endpoint Denial of Service,0.327554,0.173183
+CVE-2011-3192,train_seen,Exploit Public-Facing Application,0.248934,0.173183
+CVE-2012-0053,unseen,Exploit Public-Facing Application,0.338805,0.173183
+CVE-2012-0053,unseen,Exploitation for Client Execution,0.187835,0.173183
+CVE-2012-1823,unseen,Exploit Public-Facing Application,0.379061,0.173183
+CVE-2012-1823,unseen,Exploitation for Client Execution,0.367318,0.173183
+CVE-2012-1823,unseen,Command and Scripting Interpreter,0.240346,0.173183
+CVE-2012-2223,unseen,Exploit Public-Facing Application,0.266666,0.173183
+CVE-2012-2223,unseen,Exploitation for Client Execution,0.213891,0.173183
+CVE-2012-2311,train_seen,Exploitation for Client Execution,0.427755,0.173183
+CVE-2012-2311,train_seen,Exploit Public-Facing Application,0.341266,0.173183
+CVE-2012-2311,train_seen,Command and Scripting Interpreter,0.227826,0.173183
+CVE-2012-2335,unseen,Exploit Public-Facing Application,0.555558,0.173183
+CVE-2012-2335,unseen,Exploitation for Client Execution,0.344973,0.173183
+CVE-2012-2335,unseen,Command and Scripting Interpreter,0.333038,0.173183
+CVE-2012-2336,unseen,Exploitation for Client Execution,0.331022,0.173183
+CVE-2012-2336,unseen,Exploit Public-Facing Application,0.263739,0.173183
+CVE-2012-2336,unseen,Endpoint Denial of Service,0.247799,0.173183
+CVE-2012-4929,unseen,Exploit Public-Facing Application,0.210768,0.173183
+CVE-2012-4930,unseen,Exploit Public-Facing Application,0.199688,0.173183
+CVE-2012-6708,unseen,Command and Scripting Interpreter,0.394888,0.173183
+CVE-2013-2566,unseen,Exploitation for Client Execution,0.180004,0.173183
+CVE-2014-0224,unseen,Adversary-in-the-Middle,0.204401,0.173183
+CVE-2014-3566,train_seen,Adversary-in-the-Middle,0.313998,0.173183
+CVE-2014-7883,unseen,Exploit Public-Facing Application,0.23512,0.173183
+CVE-2014-8363,unseen,Command and Scripting Interpreter,0.608452,0.173183
+CVE-2014-8363,unseen,Exploit Public-Facing Application,0.584987,0.173183
+CVE-2014-8363,unseen,Exploitation for Client Execution,0.335096,0.173183
+CVE-2014-8364,unseen,Command and Scripting Interpreter,0.505268,0.173183
+CVE-2014-8364,unseen,Exploit Public-Facing Application,0.358791,0.173183
+CVE-2014-8364,unseen,Exploitation for Client Execution,0.268245,0.173183
+CVE-2014-8364,unseen,Drive-by Compromise,0.25331,0.173183
+CVE-2015-0204,unseen,Exploitation for Client Execution,0.193932,0.173183
+CVE-2015-4000,unseen,Adversary-in-the-Middle,0.305681,0.173183
+CVE-2016-0800,train_seen,Exploit Public-Facing Application,0.187716,0.173183
+CVE-2016-10143,unseen,Exploit Public-Facing Application,0.199485,0.173183
+CVE-2016-1776,unseen,Exploit Public-Facing Application,0.368623,0.173183
+CVE-2016-1776,unseen,Data from Local System,0.178971,0.173183
+CVE-2016-2183,unseen,Exploit Public-Facing Application,0.199086,0.173183
+CVE-2016-6329,unseen,Exploit Public-Facing Application,0.190252,0.173183
+CVE-2016-7144,unseen,Exploit Public-Facing Application,0.266207,0.173183
+CVE-2016-7144,unseen,Exploitation for Client Execution,0.199243,0.173183
+CVE-2017-11612,unseen,Command and Scripting Interpreter,0.296891,0.173183
+CVE-2017-11612,unseen,Exploit Public-Facing Application,0.173803,0.173183
+CVE-2017-7985,unseen,Command and Scripting Interpreter,0.273374,0.173183
+CVE-2017-7985,unseen,Exploit Public-Facing Application,0.183269,0.173183
+CVE-2017-7986,unseen,Command and Scripting Interpreter,0.270093,0.173183
+CVE-2017-7986,unseen,Exploit Public-Facing Application,0.189578,0.173183
+CVE-2018-15880,unseen,Command and Scripting Interpreter,0.297469,0.173183
+CVE-2018-15882,unseen,Exploit Public-Facing Application,0.214344,0.173183
+CVE-2018-17855,unseen,Exploit Public-Facing Application,0.196236,0.173183
+CVE-2018-17855,unseen,Exploitation for Privilege Escalation,0.181803,0.173183
+CVE-2018-20212,unseen,Command and Scripting Interpreter,0.632422,0.173183
+CVE-2018-20212,unseen,Exploitation for Client Execution,0.185367,0.173183
+CVE-2018-20212,unseen,Drive-by Compromise,0.176001,0.173183
+CVE-2018-20719,unseen,Command and Scripting Interpreter,0.603712,0.173183
+CVE-2018-20719,unseen,Exploit Public-Facing Application,0.365861,0.173183
+CVE-2018-6378,unseen,Command and Scripting Interpreter,0.212084,0.173183
+CVE-2018-6379,unseen,Command and Scripting Interpreter,0.346576,0.173183
+CVE-2018-7188,unseen,Command and Scripting Interpreter,0.216002,0.173183
+CVE-2018-7188,unseen,Exploitation for Privilege Escalation,0.196201,0.173183
