@@ -1,0 +1,6 @@
+path_id,observed_cve_count,predicted_cve_count,prediction_coverage,predicted_technique_count,predicted_techniques
+P001,0,0,,0,
+P002,32,31,0.9688,6,Command and Scripting Interpreter | Drive-by Compromise | Endpoint Denial of Service | Exploit Public-Facing Application | Exploitation for Client Execution | Exploitation for Privilege Escalation
+P003,55,51,0.9273,7,Command and Scripting Interpreter | Data from Local System | Drive-by Compromise | Endpoint Denial of Service | Exploit Public-Facing Application | Exploitation for Client Execution | Exploitation for Privilege Escalation
+P004,45,41,0.9111,7,Command and Scripting Interpreter | Data from Local System | Drive-by Compromise | Endpoint Denial of Service | Exploit Public-Facing Application | Exploitation for Client Execution | Exploitation for Privilege Escalation
+P005,55,51,0.9273,7,Command and Scripting Interpreter | Data from Local System | Drive-by Compromise | Endpoint Denial of Service | Exploit Public-Facing Application | Exploitation for Client Execution | Exploitation for Privilege Escalation

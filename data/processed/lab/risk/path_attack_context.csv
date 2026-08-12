@@ -1,0 +1,448 @@
+path_id,step,source,destination,service,cve_id,cve_provenance,attack_technique,model_probability
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-1999-0678,unseen,Exploit Public-Facing Application,0.213117
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2003-1567,unseen,Exploit Public-Facing Application,0.204233
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2320,unseen,Command and Scripting Interpreter,0.343119
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2320,unseen,Exploit Public-Facing Application,0.241207
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Command and Scripting Interpreter,0.351363
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Exploit Public-Facing Application,0.246926
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Drive-by Compromise,0.184139
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2005-3398,unseen,Exploit Public-Facing Application,0.266519
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2006-4683,unseen,Exploit Public-Facing Application,0.281474
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2007-3008,unseen,Exploitation for Client Execution,0.198339
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Command and Scripting Interpreter,0.617672
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Exploit Public-Facing Application,0.304367
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Drive-by Compromise,0.216557
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Exploitation for Client Execution,0.19099
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Exploit Public-Facing Application,0.503058
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Command and Scripting Interpreter,0.434387
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Exploitation for Client Execution,0.368316
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5319,unseen,Exploitation for Client Execution,0.198435
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5319,unseen,Exploit Public-Facing Application,0.19026
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-7253,unseen,Exploit Public-Facing Application,0.237316
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-1339,unseen,Exploitation for Privilege Escalation,0.217264
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Command and Scripting Interpreter,0.310436
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Exploitation for Client Execution,0.233379
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Exploit Public-Facing Application,0.226734
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-4898,unseen,Exploitation for Privilege Escalation,0.246931
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-4898,unseen,Command and Scripting Interpreter,0.175366
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-0386,unseen,Exploit Public-Facing Application,0.201692
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-0386,unseen,Exploitation for Client Execution,0.175315
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Exploit Public-Facing Application,0.663397
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Command and Scripting Interpreter,0.627189
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Exploitation for Client Execution,0.229834
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Command and Scripting Interpreter,0.702601
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Exploit Public-Facing Application,0.572001
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Exploitation for Client Execution,0.25021
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1135,unseen,Exploit Public-Facing Application,0.241661
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1136,unseen,Exploit Public-Facing Application,0.337205
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1136,unseen,Exploitation for Client Execution,0.178778
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Command and Scripting Interpreter,0.424091
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Exploitation for Client Execution,0.281782
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Exploit Public-Facing Application,0.203458
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Drive-by Compromise,0.181294
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-0053,unseen,Exploit Public-Facing Application,0.338805
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-0053,unseen,Exploitation for Client Execution,0.187835
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Exploit Public-Facing Application,0.379061
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Exploitation for Client Execution,0.367318
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Command and Scripting Interpreter,0.240346
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2223,unseen,Exploit Public-Facing Application,0.266666
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2223,unseen,Exploitation for Client Execution,0.213891
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Exploitation for Client Execution,0.427755
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Exploit Public-Facing Application,0.341266
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Command and Scripting Interpreter,0.227826
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Exploit Public-Facing Application,0.555558
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Exploitation for Client Execution,0.344973
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Command and Scripting Interpreter,0.333038
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Exploitation for Client Execution,0.331022
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Exploit Public-Facing Application,0.263739
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Endpoint Denial of Service,0.247799
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2014-7883,unseen,Exploit Public-Facing Application,0.23512
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2016-10143,unseen,Exploit Public-Facing Application,0.199485
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Command and Scripting Interpreter,0.632422
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Exploitation for Client Execution,0.185367
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Drive-by Compromise,0.176001
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20719,unseen,Command and Scripting Interpreter,0.603712
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20719,unseen,Exploit Public-Facing Application,0.365861
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-7188,unseen,Command and Scripting Interpreter,0.216002
+P002,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-7188,unseen,Exploitation for Privilege Escalation,0.196201
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-1999-0678,unseen,Exploit Public-Facing Application,0.213117
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2003-1567,unseen,Exploit Public-Facing Application,0.204233
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2320,unseen,Command and Scripting Interpreter,0.343119
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2320,unseen,Exploit Public-Facing Application,0.241207
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Command and Scripting Interpreter,0.351363
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Exploit Public-Facing Application,0.246926
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Drive-by Compromise,0.184139
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2005-3398,unseen,Exploit Public-Facing Application,0.266519
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2006-4683,unseen,Exploit Public-Facing Application,0.281474
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2007-3008,unseen,Exploitation for Client Execution,0.198339
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Command and Scripting Interpreter,0.617672
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Exploit Public-Facing Application,0.304367
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Drive-by Compromise,0.216557
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Exploitation for Client Execution,0.19099
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Exploit Public-Facing Application,0.503058
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Command and Scripting Interpreter,0.434387
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Exploitation for Client Execution,0.368316
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5319,unseen,Exploitation for Client Execution,0.198435
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5319,unseen,Exploit Public-Facing Application,0.19026
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-7253,unseen,Exploit Public-Facing Application,0.237316
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-1339,unseen,Exploitation for Privilege Escalation,0.217264
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Command and Scripting Interpreter,0.310436
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Exploitation for Client Execution,0.233379
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Exploit Public-Facing Application,0.226734
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-4898,unseen,Exploitation for Privilege Escalation,0.246931
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-4898,unseen,Command and Scripting Interpreter,0.175366
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-0386,unseen,Exploit Public-Facing Application,0.201692
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-0386,unseen,Exploitation for Client Execution,0.175315
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Exploit Public-Facing Application,0.663397
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Command and Scripting Interpreter,0.627189
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Exploitation for Client Execution,0.229834
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Command and Scripting Interpreter,0.702601
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Exploit Public-Facing Application,0.572001
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Exploitation for Client Execution,0.25021
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1135,unseen,Exploit Public-Facing Application,0.241661
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1136,unseen,Exploit Public-Facing Application,0.337205
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1136,unseen,Exploitation for Client Execution,0.178778
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Command and Scripting Interpreter,0.424091
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Exploitation for Client Execution,0.281782
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Exploit Public-Facing Application,0.203458
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Drive-by Compromise,0.181294
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-0053,unseen,Exploit Public-Facing Application,0.338805
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-0053,unseen,Exploitation for Client Execution,0.187835
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Exploit Public-Facing Application,0.379061
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Exploitation for Client Execution,0.367318
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Command and Scripting Interpreter,0.240346
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2223,unseen,Exploit Public-Facing Application,0.266666
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2223,unseen,Exploitation for Client Execution,0.213891
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Exploitation for Client Execution,0.427755
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Exploit Public-Facing Application,0.341266
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Command and Scripting Interpreter,0.227826
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Exploit Public-Facing Application,0.555558
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Exploitation for Client Execution,0.344973
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Command and Scripting Interpreter,0.333038
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Exploitation for Client Execution,0.331022
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Exploit Public-Facing Application,0.263739
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Endpoint Denial of Service,0.247799
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2014-7883,unseen,Exploit Public-Facing Application,0.23512
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2016-10143,unseen,Exploit Public-Facing Application,0.199485
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Command and Scripting Interpreter,0.632422
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Exploitation for Client Execution,0.185367
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Drive-by Compromise,0.176001
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20719,unseen,Command and Scripting Interpreter,0.603712
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20719,unseen,Exploit Public-Facing Application,0.365861
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-7188,unseen,Command and Scripting Interpreter,0.216002
+P003,1,asset:192.168.100.6,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-7188,unseen,Exploitation for Privilege Escalation,0.196201
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2003-1418,unseen,Exploit Public-Facing Application,0.272028
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2003-1567,unseen,Exploit Public-Facing Application,0.204233
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2320,unseen,Command and Scripting Interpreter,0.343119
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2320,unseen,Exploit Public-Facing Application,0.241207
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Command and Scripting Interpreter,0.351363
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Exploit Public-Facing Application,0.246926
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Drive-by Compromise,0.184139
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2005-3398,unseen,Exploit Public-Facing Application,0.266519
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-2247,unseen,Exploit Public-Facing Application,0.230674
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-2247,unseen,Exploitation for Client Execution,0.205006
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-4683,unseen,Exploit Public-Facing Application,0.281474
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2007-3008,unseen,Exploitation for Client Execution,0.198339
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-5319,unseen,Exploitation for Client Execution,0.198435
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-5319,unseen,Exploit Public-Facing Application,0.19026
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-7253,unseen,Exploit Public-Facing Application,0.237316
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-0796,unseen,Command and Scripting Interpreter,0.490965
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-0796,unseen,Exploit Public-Facing Application,0.337203
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Command and Scripting Interpreter,0.618723
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Exploit Public-Facing Application,0.46152
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Drive-by Compromise,0.258197
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Exploitation for Client Execution,0.189308
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Command and Scripting Interpreter,0.310436
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Exploitation for Client Execution,0.233379
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Exploit Public-Facing Application,0.226734
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0386,unseen,Exploit Public-Facing Application,0.201692
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0386,unseen,Exploitation for Client Execution,0.175315
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Command and Scripting Interpreter,0.55186
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Exploit Public-Facing Application,0.463177
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Drive-by Compromise,0.219548
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Exploit Public-Facing Application,0.192514
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Exploitation for Privilege Escalation,0.191737
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Command and Scripting Interpreter,0.175186
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0638,unseen,Exploitation for Privilege Escalation,0.190264
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Exploit Public-Facing Application,0.663397
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Command and Scripting Interpreter,0.627189
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Exploitation for Client Execution,0.229834
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Command and Scripting Interpreter,0.702601
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Exploit Public-Facing Application,0.572001
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Exploitation for Client Execution,0.25021
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1135,unseen,Exploit Public-Facing Application,0.241661
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1136,unseen,Exploit Public-Facing Application,0.337205
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1136,unseen,Exploitation for Client Execution,0.178778
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Command and Scripting Interpreter,0.497798
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Exploit Public-Facing Application,0.45748
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Exploitation for Client Execution,0.223034
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Command and Scripting Interpreter,0.424091
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Exploitation for Client Execution,0.281782
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Exploit Public-Facing Application,0.203458
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Drive-by Compromise,0.181294
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Exploitation for Client Execution,0.357422
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Endpoint Denial of Service,0.327554
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Exploit Public-Facing Application,0.248934
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-0053,unseen,Exploit Public-Facing Application,0.338805
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-0053,unseen,Exploitation for Client Execution,0.187835
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-2223,unseen,Exploit Public-Facing Application,0.266666
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-2223,unseen,Exploitation for Client Execution,0.213891
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-7883,unseen,Exploit Public-Facing Application,0.23512
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Command and Scripting Interpreter,0.608452
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Exploit Public-Facing Application,0.584987
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Exploitation for Client Execution,0.335096
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Command and Scripting Interpreter,0.505268
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Exploit Public-Facing Application,0.358791
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Exploitation for Client Execution,0.268245
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Drive-by Compromise,0.25331
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-10143,unseen,Exploit Public-Facing Application,0.199485
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-1776,unseen,Exploit Public-Facing Application,0.368623
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-1776,unseen,Data from Local System,0.178971
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-11612,unseen,Command and Scripting Interpreter,0.296891
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-11612,unseen,Exploit Public-Facing Application,0.173803
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7985,unseen,Command and Scripting Interpreter,0.273374
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7985,unseen,Exploit Public-Facing Application,0.183269
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7986,unseen,Command and Scripting Interpreter,0.270093
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7986,unseen,Exploit Public-Facing Application,0.189578
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-15880,unseen,Command and Scripting Interpreter,0.297469
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-15882,unseen,Exploit Public-Facing Application,0.214344
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-17855,unseen,Exploit Public-Facing Application,0.196236
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-17855,unseen,Exploitation for Privilege Escalation,0.181803
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-20719,unseen,Command and Scripting Interpreter,0.603712
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-20719,unseen,Exploit Public-Facing Application,0.365861
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-6378,unseen,Command and Scripting Interpreter,0.212084
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-6379,unseen,Command and Scripting Interpreter,0.346576
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-7188,unseen,Command and Scripting Interpreter,0.216002
+P003,2,asset:192.168.100.7,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-7188,unseen,Exploitation for Privilege Escalation,0.196201
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2003-1418,unseen,Exploit Public-Facing Application,0.272028
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2003-1567,unseen,Exploit Public-Facing Application,0.204233
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2320,unseen,Command and Scripting Interpreter,0.343119
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2320,unseen,Exploit Public-Facing Application,0.241207
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Command and Scripting Interpreter,0.351363
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Exploit Public-Facing Application,0.246926
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Drive-by Compromise,0.184139
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2005-3398,unseen,Exploit Public-Facing Application,0.266519
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-2247,unseen,Exploit Public-Facing Application,0.230674
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-2247,unseen,Exploitation for Client Execution,0.205006
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-4683,unseen,Exploit Public-Facing Application,0.281474
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2007-3008,unseen,Exploitation for Client Execution,0.198339
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-5319,unseen,Exploitation for Client Execution,0.198435
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-5319,unseen,Exploit Public-Facing Application,0.19026
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-7253,unseen,Exploit Public-Facing Application,0.237316
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-0796,unseen,Command and Scripting Interpreter,0.490965
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-0796,unseen,Exploit Public-Facing Application,0.337203
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Command and Scripting Interpreter,0.618723
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Exploit Public-Facing Application,0.46152
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Drive-by Compromise,0.258197
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Exploitation for Client Execution,0.189308
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Command and Scripting Interpreter,0.310436
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Exploitation for Client Execution,0.233379
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Exploit Public-Facing Application,0.226734
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0386,unseen,Exploit Public-Facing Application,0.201692
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0386,unseen,Exploitation for Client Execution,0.175315
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Command and Scripting Interpreter,0.55186
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Exploit Public-Facing Application,0.463177
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Drive-by Compromise,0.219548
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Exploit Public-Facing Application,0.192514
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Exploitation for Privilege Escalation,0.191737
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Command and Scripting Interpreter,0.175186
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0638,unseen,Exploitation for Privilege Escalation,0.190264
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Exploit Public-Facing Application,0.663397
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Command and Scripting Interpreter,0.627189
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Exploitation for Client Execution,0.229834
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Command and Scripting Interpreter,0.702601
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Exploit Public-Facing Application,0.572001
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Exploitation for Client Execution,0.25021
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1135,unseen,Exploit Public-Facing Application,0.241661
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1136,unseen,Exploit Public-Facing Application,0.337205
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1136,unseen,Exploitation for Client Execution,0.178778
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Command and Scripting Interpreter,0.497798
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Exploit Public-Facing Application,0.45748
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Exploitation for Client Execution,0.223034
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Command and Scripting Interpreter,0.424091
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Exploitation for Client Execution,0.281782
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Exploit Public-Facing Application,0.203458
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Drive-by Compromise,0.181294
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Exploitation for Client Execution,0.357422
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Endpoint Denial of Service,0.327554
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Exploit Public-Facing Application,0.248934
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-0053,unseen,Exploit Public-Facing Application,0.338805
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-0053,unseen,Exploitation for Client Execution,0.187835
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-2223,unseen,Exploit Public-Facing Application,0.266666
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-2223,unseen,Exploitation for Client Execution,0.213891
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-7883,unseen,Exploit Public-Facing Application,0.23512
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Command and Scripting Interpreter,0.608452
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Exploit Public-Facing Application,0.584987
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Exploitation for Client Execution,0.335096
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Command and Scripting Interpreter,0.505268
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Exploit Public-Facing Application,0.358791
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Exploitation for Client Execution,0.268245
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Drive-by Compromise,0.25331
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-10143,unseen,Exploit Public-Facing Application,0.199485
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-1776,unseen,Exploit Public-Facing Application,0.368623
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-1776,unseen,Data from Local System,0.178971
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-11612,unseen,Command and Scripting Interpreter,0.296891
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-11612,unseen,Exploit Public-Facing Application,0.173803
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7985,unseen,Command and Scripting Interpreter,0.273374
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7985,unseen,Exploit Public-Facing Application,0.183269
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7986,unseen,Command and Scripting Interpreter,0.270093
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7986,unseen,Exploit Public-Facing Application,0.189578
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-15880,unseen,Command and Scripting Interpreter,0.297469
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-15882,unseen,Exploit Public-Facing Application,0.214344
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-17855,unseen,Exploit Public-Facing Application,0.196236
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-17855,unseen,Exploitation for Privilege Escalation,0.181803
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-20719,unseen,Command and Scripting Interpreter,0.603712
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-20719,unseen,Exploit Public-Facing Application,0.365861
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-6378,unseen,Command and Scripting Interpreter,0.212084
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-6379,unseen,Command and Scripting Interpreter,0.346576
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-7188,unseen,Command and Scripting Interpreter,0.216002
+P004,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-7188,unseen,Exploitation for Privilege Escalation,0.196201
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2003-1418,unseen,Exploit Public-Facing Application,0.272028
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2003-1567,unseen,Exploit Public-Facing Application,0.204233
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2320,unseen,Command and Scripting Interpreter,0.343119
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2320,unseen,Exploit Public-Facing Application,0.241207
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Command and Scripting Interpreter,0.351363
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Exploit Public-Facing Application,0.246926
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2004-2763,unseen,Drive-by Compromise,0.184139
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2005-3398,unseen,Exploit Public-Facing Application,0.266519
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-2247,unseen,Exploit Public-Facing Application,0.230674
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-2247,unseen,Exploitation for Client Execution,0.205006
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2006-4683,unseen,Exploit Public-Facing Application,0.281474
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2007-3008,unseen,Exploitation for Client Execution,0.198339
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-5319,unseen,Exploitation for Client Execution,0.198435
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-5319,unseen,Exploit Public-Facing Application,0.19026
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2008-7253,unseen,Exploit Public-Facing Application,0.237316
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-0796,unseen,Command and Scripting Interpreter,0.490965
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-0796,unseen,Exploit Public-Facing Application,0.337203
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Command and Scripting Interpreter,0.618723
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Exploit Public-Facing Application,0.46152
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Drive-by Compromise,0.258197
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-1204,unseen,Exploitation for Client Execution,0.189308
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Command and Scripting Interpreter,0.310436
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Exploitation for Client Execution,0.233379
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2009-2823,unseen,Exploit Public-Facing Application,0.226734
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0386,unseen,Exploit Public-Facing Application,0.201692
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0386,unseen,Exploitation for Client Execution,0.175315
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Command and Scripting Interpreter,0.55186
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Exploit Public-Facing Application,0.463177
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0636,unseen,Drive-by Compromise,0.219548
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Exploit Public-Facing Application,0.192514
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Exploitation for Privilege Escalation,0.191737
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0637,unseen,Command and Scripting Interpreter,0.175186
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-0638,unseen,Exploitation for Privilege Escalation,0.190264
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Exploit Public-Facing Application,0.663397
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Command and Scripting Interpreter,0.627189
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1133,unseen,Exploitation for Client Execution,0.229834
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Command and Scripting Interpreter,0.702601
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Exploit Public-Facing Application,0.572001
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1134,unseen,Exploitation for Client Execution,0.25021
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1135,unseen,Exploit Public-Facing Application,0.241661
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1136,unseen,Exploit Public-Facing Application,0.337205
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-1136,unseen,Exploitation for Client Execution,0.178778
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Command and Scripting Interpreter,0.497798
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Exploit Public-Facing Application,0.45748
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-3712,unseen,Exploitation for Client Execution,0.223034
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Command and Scripting Interpreter,0.424091
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Exploitation for Client Execution,0.281782
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Exploit Public-Facing Application,0.203458
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2010-4480,unseen,Drive-by Compromise,0.181294
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Exploitation for Client Execution,0.357422
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Endpoint Denial of Service,0.327554
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2011-3192,train_seen,Exploit Public-Facing Application,0.248934
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-0053,unseen,Exploit Public-Facing Application,0.338805
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-0053,unseen,Exploitation for Client Execution,0.187835
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-2223,unseen,Exploit Public-Facing Application,0.266666
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2012-2223,unseen,Exploitation for Client Execution,0.213891
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-7883,unseen,Exploit Public-Facing Application,0.23512
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Command and Scripting Interpreter,0.608452
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Exploit Public-Facing Application,0.584987
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8363,unseen,Exploitation for Client Execution,0.335096
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Command and Scripting Interpreter,0.505268
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Exploit Public-Facing Application,0.358791
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Exploitation for Client Execution,0.268245
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2014-8364,unseen,Drive-by Compromise,0.25331
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-10143,unseen,Exploit Public-Facing Application,0.199485
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-1776,unseen,Exploit Public-Facing Application,0.368623
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2016-1776,unseen,Data from Local System,0.178971
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-11612,unseen,Command and Scripting Interpreter,0.296891
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-11612,unseen,Exploit Public-Facing Application,0.173803
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7985,unseen,Command and Scripting Interpreter,0.273374
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7985,unseen,Exploit Public-Facing Application,0.183269
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7986,unseen,Command and Scripting Interpreter,0.270093
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2017-7986,unseen,Exploit Public-Facing Application,0.189578
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-15880,unseen,Command and Scripting Interpreter,0.297469
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-15882,unseen,Exploit Public-Facing Application,0.214344
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-17855,unseen,Exploit Public-Facing Application,0.196236
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-17855,unseen,Exploitation for Privilege Escalation,0.181803
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-20719,unseen,Command and Scripting Interpreter,0.603712
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-20719,unseen,Exploit Public-Facing Application,0.365861
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-6378,unseen,Command and Scripting Interpreter,0.212084
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-6379,unseen,Command and Scripting Interpreter,0.346576
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-7188,unseen,Command and Scripting Interpreter,0.216002
+P005,1,asset:192.168.100.6,asset:192.168.100.8,service:192.168.100.8:80:tcp,CVE-2018-7188,unseen,Exploitation for Privilege Escalation,0.196201
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-1999-0678,unseen,Exploit Public-Facing Application,0.213117
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2003-1567,unseen,Exploit Public-Facing Application,0.204233
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2320,unseen,Command and Scripting Interpreter,0.343119
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2320,unseen,Exploit Public-Facing Application,0.241207
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Command and Scripting Interpreter,0.351363
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Exploit Public-Facing Application,0.246926
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2004-2763,unseen,Drive-by Compromise,0.184139
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2005-3398,unseen,Exploit Public-Facing Application,0.266519
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2006-4683,unseen,Exploit Public-Facing Application,0.281474
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2007-3008,unseen,Exploitation for Client Execution,0.198339
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Command and Scripting Interpreter,0.617672
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Exploit Public-Facing Application,0.304367
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Drive-by Compromise,0.216557
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5304,unseen,Exploitation for Client Execution,0.19099
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Exploit Public-Facing Application,0.503058
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Command and Scripting Interpreter,0.434387
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5305,unseen,Exploitation for Client Execution,0.368316
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5319,unseen,Exploitation for Client Execution,0.198435
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-5319,unseen,Exploit Public-Facing Application,0.19026
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2008-7253,unseen,Exploit Public-Facing Application,0.237316
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-1339,unseen,Exploitation for Privilege Escalation,0.217264
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Command and Scripting Interpreter,0.310436
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Exploitation for Client Execution,0.233379
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-2823,unseen,Exploit Public-Facing Application,0.226734
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-4898,unseen,Exploitation for Privilege Escalation,0.246931
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2009-4898,unseen,Command and Scripting Interpreter,0.175366
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-0386,unseen,Exploit Public-Facing Application,0.201692
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-0386,unseen,Exploitation for Client Execution,0.175315
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Exploit Public-Facing Application,0.663397
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Command and Scripting Interpreter,0.627189
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1133,unseen,Exploitation for Client Execution,0.229834
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Command and Scripting Interpreter,0.702601
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Exploit Public-Facing Application,0.572001
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1134,unseen,Exploitation for Client Execution,0.25021
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1135,unseen,Exploit Public-Facing Application,0.241661
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1136,unseen,Exploit Public-Facing Application,0.337205
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-1136,unseen,Exploitation for Client Execution,0.178778
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Command and Scripting Interpreter,0.424091
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Exploitation for Client Execution,0.281782
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Exploit Public-Facing Application,0.203458
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2010-4480,unseen,Drive-by Compromise,0.181294
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-0053,unseen,Exploit Public-Facing Application,0.338805
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-0053,unseen,Exploitation for Client Execution,0.187835
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Exploit Public-Facing Application,0.379061
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Exploitation for Client Execution,0.367318
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-1823,unseen,Command and Scripting Interpreter,0.240346
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2223,unseen,Exploit Public-Facing Application,0.266666
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2223,unseen,Exploitation for Client Execution,0.213891
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Exploitation for Client Execution,0.427755
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Exploit Public-Facing Application,0.341266
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2311,train_seen,Command and Scripting Interpreter,0.227826
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Exploit Public-Facing Application,0.555558
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Exploitation for Client Execution,0.344973
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2335,unseen,Command and Scripting Interpreter,0.333038
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Exploitation for Client Execution,0.331022
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Exploit Public-Facing Application,0.263739
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2012-2336,unseen,Endpoint Denial of Service,0.247799
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2014-7883,unseen,Exploit Public-Facing Application,0.23512
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2016-10143,unseen,Exploit Public-Facing Application,0.199485
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Command and Scripting Interpreter,0.632422
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Exploitation for Client Execution,0.185367
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20212,unseen,Drive-by Compromise,0.176001
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20719,unseen,Command and Scripting Interpreter,0.603712
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-20719,unseen,Exploit Public-Facing Application,0.365861
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-7188,unseen,Command and Scripting Interpreter,0.216002
+P005,2,asset:192.168.100.8,asset:192.168.100.7,service:192.168.100.7:80:tcp,CVE-2018-7188,unseen,Exploitation for Privilege Escalation,0.196201
