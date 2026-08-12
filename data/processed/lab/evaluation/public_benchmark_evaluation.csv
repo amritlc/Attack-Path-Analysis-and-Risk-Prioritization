@@ -1,0 +1,4 @@
+benchmark,validation_dimension,reference_items,recovered_items,recovery,additional_result
+DARPA LLDOS 1.0,Multi-stage sequence,5,5,1.0,order_preserved=True
+MulVAL 3-host,Graph structure,7,7,1.0,unsupported_relations=3
+NOMS 2022,CVE-to-ATT&CK context,2,2,1.0,held_out_cves=2

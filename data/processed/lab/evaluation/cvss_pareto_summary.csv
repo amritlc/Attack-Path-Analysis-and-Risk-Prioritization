@@ -1,0 +1,2 @@
+vulnerability_supported_paths,cvss_top_group_size,pareto_front1_size,top_group_reduction,cvss_top_paths,pareto_front1_paths
+4,3,1,2,P002 | P003 | P005,P002

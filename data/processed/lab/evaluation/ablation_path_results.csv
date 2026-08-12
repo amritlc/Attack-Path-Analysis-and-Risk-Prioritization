@@ -1,0 +1,5 @@
+path_id,full,without_cvss,without_epss,without_kev
+P002,1,1,1,1
+P003,2,2,2,2
+P004,3,3,3,2
+P005,2,2,2,2

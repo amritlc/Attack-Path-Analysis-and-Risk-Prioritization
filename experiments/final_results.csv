@@ -1,0 +1,17 @@
+experiment,measure,value
+E01,Source-to-target paths,5.0
+E01,Multi-stage paths,4.0
+E01,Candidate compromise steps,6.0
+E02,CVSS top-group size,3.0
+E02,Pareto Front-1 size,1.0
+E03,Changed paths without CVSS,0.0
+E03,Changed paths without EPSS,0.0
+E03,Changed paths without KEV,1.0
+E04,Default threshold Micro-F1,0.1447963800904977
+E04,Validation-tuned threshold Micro-F1,0.45682001614205
+E05,Lab CVE prediction coverage,0.935064935064935
+E06-E08,DARPA LLDOS 1.0 recovery,1.0
+E06-E08,MulVAL 3-host recovery,1.0
+E06-E08,NOMS 2022 recovery,1.0
+E09,Mean pipeline runtime seconds,12.08595342002809
+E09,Median pipeline runtime seconds,12.061707600019872

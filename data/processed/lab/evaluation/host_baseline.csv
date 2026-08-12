@@ -1,0 +1,5 @@
+ip,asset_name,role,criticality,target,finding_count,cve_count,max_openvas_cvss,max_cvss,max_epss,kev_cve_count,has_kev
+192.168.100.4,Application Server,application_server,High,False,1,0,2.6,,,0,False
+192.168.100.5,Database Server,database_server,Critical,True,1,0,2.6,,,0,False
+192.168.100.7,Metasploitable,vulnerable_server,Medium,False,56,49,10.0,10.0,0.99999,1,True
+192.168.100.8,OWASP BWA,web_application,High,False,78,56,10.0,9.8,0.99999,0,False

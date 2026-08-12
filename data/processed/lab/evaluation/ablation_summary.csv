@@ -1,0 +1,4 @@
+removed_evidence,changed_path_count,changed_paths,front1_paths,distinct_front_count
+CVSS,0,,P002,3
+EPSS,0,,P002,3
+KEV,1,P004,P002,2

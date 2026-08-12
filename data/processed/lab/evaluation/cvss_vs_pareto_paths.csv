@@ -1,0 +1,5 @@
+path_id,baseline_cvss,baseline_rank,bottleneck_cvss,bottleneck_epss,kev_coverage,evidence_front
+P002,10.0,1.0,10.0,0.99998,1.0,1.0
+P003,10.0,1.0,9.8,0.98945,0.5,2.0
+P005,10.0,1.0,9.8,0.98945,0.5,2.0
+P004,9.8,2.0,9.8,0.98945,0.0,3.0

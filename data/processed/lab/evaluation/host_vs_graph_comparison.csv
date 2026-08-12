@@ -1,0 +1,8 @@
+analysis_dimension,host_based,graph_based,graph_observation
+Hosts with vulnerability evidence,Available,Available,
+Per-host CVSS evidence,Available,Available,
+Source-to-target paths,Not available,Available,5
+Multi-stage paths,Not available,Available,4
+Direct target exposure,Not available,Available,1
+Candidate compromise steps,Not available,Available,6
+Unique compromise transitions,Not available,Available,4
