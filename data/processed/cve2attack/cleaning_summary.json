@@ -1,0 +1,18 @@
+{
+  "original_training_rows": 1348,
+  "original_test_rows": 317,
+  "overlapping_cves": [
+    "CVE-2014-6271",
+    "CVE-2022-22965"
+  ],
+  "removed_test_overlap_rows": 2,
+  "duplicate_training_cves": [
+    "CVE-2011-4106",
+    "CVE-2014-3566"
+  ],
+  "duplicate_rows_removed": 2,
+  "final_training_rows": 1344,
+  "final_unique_training_cves": 1344,
+  "final_test_rows": 317,
+  "test_modified": false
+}
