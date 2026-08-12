@@ -1,0 +1,6 @@
+phase,reference_stage,expected_source,expected_targets,expected_services
+1,IP sweep,202.77.162.213,172.16.115.20|172.16.112.50|172.16.112.10,icmp-echo-request
+2,sadmind probe,202.77.162.213,172.16.115.20|172.16.112.50|172.16.112.10,udp
+3,sadmind break-in,202.77.162.213,172.16.115.20|172.16.112.50|172.16.112.10,udp|tcp
+4,Mstream installation,202.77.162.213,172.16.115.20|172.16.112.50|172.16.112.10,tcp
+5,DDoS launch,,131.84.1.31,tcp
