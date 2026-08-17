@@ -116,6 +116,27 @@ def test_pipeline_runtime():
     )
 
 
+def test_scalability_results():
+    data = pd.read_csv(
+        BASE / "scalability_summary.csv"
+    )
+
+    assert len(data) == 5
+
+    largest = data.sort_values(
+        "host_count"
+    ).iloc[-1]
+
+    assert largest["host_count"] == 80
+    assert largest["vulnerability_count"] == 6240
+    assert largest["graph_nodes"] == 6398
+    assert largest["graph_edges"] == 12558
+    assert largest["path_count"] == 3081
+
+    assert largest["median_seconds"] > 0
+    assert largest["mean_peak_memory_mb"] > 0
+
+
 def test_evaluation_figures_exist():
     expected = [
         "experimental_network_architecture.png",
@@ -125,6 +146,8 @@ def test_evaluation_figures_exist():
         "cvss_vs_pareto.png",
         "ai_model_comparison.png",
         "runtime_by_stage.png",
+        "scalability_runtime.png",
+        "scalability_memory.png",
     ]
 
     for name in expected:

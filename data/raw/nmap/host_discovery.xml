@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Tue Jul 28 15:17:45 2026 as: /usr/lib/nmap/nmap -sn -oA host_discovery 192.168.100.0/24 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sn -oA host_discovery 192.168.100.0/24" start="1785248265" startstr="Tue Jul 28 15:17:45 2026" version="7.95" xmloutputversion="1.05">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.100.1" addrtype="ipv4"/>
+<address addr="52:54:00:12:35:00" addrtype="mac" vendor="QEMU virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="1702" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.100.2" addrtype="ipv4"/>
+<address addr="52:54:00:12:35:00" addrtype="mac" vendor="QEMU virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="393" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.100.3" addrtype="ipv4"/>
+<address addr="08:00:27:3F:3D:CC" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="1795" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.100.4" addrtype="ipv4"/>
+<address addr="08:00:27:A5:83:56" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="2376" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.100.5" addrtype="ipv4"/>
+<address addr="08:00:27:79:03:E3" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="5248" rttvar="5248" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.100.7" addrtype="ipv4"/>
+<address addr="08:00:27:AC:1F:7A" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="3356" rttvar="2814" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.100.8" addrtype="ipv4"/>
+<address addr="08:00:27:5B:1B:AF" addrtype="mac" vendor="PCS Systemtechnik/Oracle VirtualBox virtual NIC"/>
+<hostnames>
+</hostnames>
+<times srtt="1066" rttvar="5000" to="100000"/>
+</host>
+<host><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="192.168.100.6" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</host>
+<runstats><finished time="1785248267" timestr="Tue Jul 28 15:17:47 2026" summary="Nmap done at Tue Jul 28 15:17:47 2026; 256 IP addresses (8 hosts up) scanned in 2.21 seconds" elapsed="2.21" exit="success"/><hosts up="8" down="248" total="256"/>
+</runstats>
+</nmaprun>

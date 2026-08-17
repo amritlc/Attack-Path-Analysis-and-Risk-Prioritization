@@ -1,0 +1,25 @@
+# Nmap 7.95 scan initiated Tue Jul 28 15:17:45 2026 as: /usr/lib/nmap/nmap -sn -oA host_discovery 192.168.100.0/24
+Nmap scan report for 192.168.100.1
+Host is up (0.0017s latency).
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+Nmap scan report for 192.168.100.2
+Host is up (0.00039s latency).
+MAC Address: 52:54:00:12:35:00 (QEMU virtual NIC)
+Nmap scan report for 192.168.100.3
+Host is up (0.0018s latency).
+MAC Address: 08:00:27:3F:3D:CC (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.100.4
+Host is up (0.0024s latency).
+MAC Address: 08:00:27:A5:83:56 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.100.5
+Host is up (0.0052s latency).
+MAC Address: 08:00:27:79:03:E3 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.100.7
+Host is up (0.0034s latency).
+MAC Address: 08:00:27:AC:1F:7A (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.100.8
+Host is up (0.0011s latency).
+MAC Address: 08:00:27:5B:1B:AF (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.100.6
+Host is up.
+# Nmap done at Tue Jul 28 15:17:47 2026 -- 256 IP addresses (8 hosts up) scanned in 2.21 seconds

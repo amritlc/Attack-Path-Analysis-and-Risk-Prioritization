@@ -15,3 +15,10 @@ E06-E08,MulVAL 3-host recovery,1.0
 E06-E08,NOMS 2022 recovery,1.0
 E09,Mean pipeline runtime seconds,12.08595342002809
 E09,Median pipeline runtime seconds,12.061707600019872
+E10,Maximum tested host count,80.0
+E10,Maximum tested vulnerability count,6240.0
+E10,Maximum tested graph nodes,6398.0
+E10,Maximum tested graph edges,12558.0
+E10,Maximum tested path count,3081.0
+E10,Largest-case median runtime seconds,0.3448501001112163
+E10,Largest-case mean peak memory MB,7.691887283325196

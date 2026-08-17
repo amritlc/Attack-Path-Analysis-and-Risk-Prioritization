@@ -1,0 +1,25 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+192.168.100.5,,,,2.6,Low,"Mitigation","TCP timestamps","The remote host implements TCP timestamps and therefore allows to compute
+  the uptime.","It was detected that the host implements RFC1323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 1220529697
+Packet 2: 1220531614",1.3.6.1.4.1.25623.1.0.80091,"NOCVE",8e143262-4cda-4ab6-b68f-59e274e7ae30,"Database Server",2026-07-29T08:28:55Z,539f5ee9-5ef2-446c-93c0-c6b6554b0511,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line 'net.ipv4.tcp_timestamps = 0' to
+  /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the
+  Timestamp options when initiating TCP connections, but use them if the TCP peer
+  that is initiating communication includes them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP/IPv4 implementations that implement RFC1323.","The remote host implements TCP timestamps, as defined by RFC1323.","Special IP packets are forged and sent with a little delay in between to the
+  target IP. The responses are searched for a timestamps. If found, the timestamps are reported.
+Details:
+TCP timestamps
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: $Revision: 14310 $
+","","","","http://www.ietf.org/rfc/rfc1323.txt, http://www.microsoft.com/en-us/download/details.aspx?id=9152"

@@ -1,0 +1,39 @@
+# Nmap 7.95 scan initiated Tue Jul 28 16:31:37 2026 as: /usr/lib/nmap/nmap -sS -sV -p- -T3 --reason -oA full_tcp_metasploitable 192.168.100.7
+Nmap scan report for 192.168.100.7
+Host is up, received arp-response (0.00085s latency).
+Not shown: 65506 closed tcp ports (reset)
+PORT      STATE SERVICE     REASON         VERSION
+21/tcp    open  ftp         syn-ack ttl 64 vsftpd 2.3.4
+22/tcp    open  ssh         syn-ack ttl 64 OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+23/tcp    open  telnet      syn-ack ttl 64 Linux telnetd
+25/tcp    open  smtp        syn-ack ttl 64 Postfix smtpd
+53/tcp    open  domain      syn-ack ttl 64 ISC BIND 9.4.2
+80/tcp    open  http        syn-ack ttl 64 Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+111/tcp   open  rpcbind     syn-ack ttl 64 2 (RPC #100000)
+139/tcp   open  netbios-ssn syn-ack ttl 64 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn syn-ack ttl 64 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+512/tcp   open  exec        syn-ack ttl 64 netkit-rsh rexecd
+513/tcp   open  login       syn-ack ttl 64
+514/tcp   open  tcpwrapped  syn-ack ttl 64
+1099/tcp  open  java-rmi    syn-ack ttl 64 GNU Classpath grmiregistry
+1524/tcp  open  bindshell   syn-ack ttl 64 Metasploitable root shell
+2049/tcp  open  nfs         syn-ack ttl 64 2-4 (RPC #100003)
+2121/tcp  open  ftp         syn-ack ttl 64 ProFTPD 1.3.1
+3306/tcp  open  mysql       syn-ack ttl 64 MySQL 5.0.51a-3ubuntu5
+3632/tcp  open  distccd     syn-ack ttl 64 distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))
+5432/tcp  open  postgresql  syn-ack ttl 64 PostgreSQL DB 8.3.0 - 8.3.7
+5900/tcp  open  vnc         syn-ack ttl 64 VNC (protocol 3.3)
+6000/tcp  open  X11         syn-ack ttl 64 (access denied)
+6667/tcp  open  irc         syn-ack ttl 64 UnrealIRCd
+6697/tcp  open  irc         syn-ack ttl 64 UnrealIRCd
+8180/tcp  open  unknown     syn-ack ttl 64
+8787/tcp  open  drb         syn-ack ttl 64 Ruby DRb RMI (Ruby 1.8; path /usr/lib/ruby/1.8/drb)
+38264/tcp open  nlockmgr    syn-ack ttl 64 1-4 (RPC #100021)
+46357/tcp open  mountd      syn-ack ttl 64 1-3 (RPC #100005)
+48161/tcp open  java-rmi    syn-ack ttl 64 GNU Classpath grmiregistry
+59135/tcp open  status      syn-ack ttl 64 1 (RPC #100024)
+MAC Address: 08:00:27:AC:1F:7A (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 28 16:35:27 2026 -- 1 IP address (1 host up) scanned in 230.07 seconds

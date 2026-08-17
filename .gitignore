@@ -1,10 +1,22 @@
 venv/
 __pycache__/
 *.pyc
+.pytest_cache/
 .ipynb_checkpoints/
 
+# Raw data is ignored by default.
 data/raw/*
-!data/raw/.gitkeep
+
+# Laboratory scan evidence is retained.
+!data/raw/nmap/
+!data/raw/nmap/**
+!data/raw/openvas/
+!data/raw/openvas/**
+
+# External dataset documentation is retained.
+!data/raw/external/
+data/raw/external/*
+!data/raw/external/README.md
 
 reports/
 

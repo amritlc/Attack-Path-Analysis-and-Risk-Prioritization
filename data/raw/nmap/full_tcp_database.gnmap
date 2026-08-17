@@ -1,0 +1,4 @@
+# Nmap 7.95 scan initiated Tue Jul 28 16:13:33 2026 as: /usr/lib/nmap/nmap -sS -sV -p- -T3 --reason -oA full_tcp_database 192.168.100.5
+Host: 192.168.100.5 ()	Status: Up
+Host: 192.168.100.5 ()	Ports: 22/open/tcp//ssh//OpenSSH 9.9p1 Ubuntu 3ubuntu3.1 (Ubuntu Linux; protocol 2.0)/, 3306/open/tcp//mysql//MySQL 8.4.7-0ubuntu0.25.04.2/	Ignored State: closed (65533)
+# Nmap done at Tue Jul 28 16:14:14 2026 -- 1 IP address (1 host up) scanned in 41.71 seconds

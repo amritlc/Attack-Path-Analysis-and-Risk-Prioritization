@@ -1,10 +1,11 @@
 experiment_id,evaluation_question,comparison,metrics
-E01,EQ1,Host-based vulnerability view vs graph-based attack-path analysis,"path_count|multi_stage_path_count|hop_count|candidate_compromise_steps"
-E02,EQ2,CVSS-only baseline vs Pareto prioritisation,"cvss_rank|pareto_front|top_rank_ties"
-E03,EQ3,Full Pareto evidence vs single-feature ablation,"pareto_front_without_cvss|pareto_front_without_epss|pareto_front_without_kev"
-E04,EQ4,Default ML vs validation-threshold ML,"micro_precision|micro_recall|micro_f1|macro_f1|hamming_loss"
-E05,EQ4,AI path behavioural enrichment,"observed_cve_count|predicted_cve_count|prediction_coverage|predicted_technique_count"
-E06,EQ5,DARPA LLDOS benchmark,"stage_recovery|order_preserved|complete_campaign_sequence"
-E07,EQ5,MulVAL 3-host benchmark,"supported_checks|passed_checks|unsupported_relation_count"
-E08,EQ5,NOMS 2022 hold-out benchmark,"reference_mappings|recovered_mappings|reference_recovery"
-E09,Practicality,Pipeline runtime,"execution_seconds"
+E01,EQ1,Host-based vulnerability view vs graph-based attack-path analysis,path_count|multi_stage_path_count|hop_count|candidate_compromise_steps
+E02,EQ2,CVSS-only baseline vs Pareto prioritisation,cvss_rank|pareto_front|top_rank_ties
+E03,EQ3,Full Pareto evidence vs single-feature ablation,pareto_front_without_cvss|pareto_front_without_epss|pareto_front_without_kev
+E04,EQ4,Default ML vs validation-threshold ML,micro_precision|micro_recall|micro_f1|macro_f1|hamming_loss
+E05,EQ4,AI path behavioural enrichment,observed_cve_count|predicted_cve_count|prediction_coverage|predicted_technique_count
+E06,EQ5,DARPA LLDOS benchmark,stage_recovery|order_preserved|complete_campaign_sequence
+E07,EQ5,MulVAL 3-host benchmark,supported_checks|passed_checks|unsupported_relation_count
+E08,EQ5,NOMS 2022 hold-out benchmark,reference_mappings|recovered_mappings|reference_recovery
+E09,Practicality,Pipeline runtime,execution_seconds
+E10,Scalability,Controlled synthetic graph and attack-path scalability,host_count|vulnerability_count|graph_nodes|graph_edges|path_count|execution_seconds|peak_memory_mb

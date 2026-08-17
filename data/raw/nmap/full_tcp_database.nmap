@@ -1,0 +1,12 @@
+# Nmap 7.95 scan initiated Tue Jul 28 16:13:33 2026 as: /usr/lib/nmap/nmap -sS -sV -p- -T3 --reason -oA full_tcp_database 192.168.100.5
+Nmap scan report for 192.168.100.5
+Host is up, received arp-response (0.0098s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE REASON         VERSION
+22/tcp   open  ssh     syn-ack ttl 64 OpenSSH 9.9p1 Ubuntu 3ubuntu3.1 (Ubuntu Linux; protocol 2.0)
+3306/tcp open  mysql   syn-ack ttl 64 MySQL 8.4.7-0ubuntu0.25.04.2
+MAC Address: 08:00:27:79:03:E3 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 28 16:14:14 2026 -- 1 IP address (1 host up) scanned in 41.71 seconds
